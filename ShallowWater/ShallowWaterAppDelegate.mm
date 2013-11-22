@@ -60,8 +60,10 @@
 	[_window addSubview:_viewController.view];
 	[_window makeKeyAndVisible];
 
+    [self createView];
+    
 	// Creates the view(s) and adds them to the director
-	[[Isgl3dDirector sharedInstance] addView:[HelloWorldView view]];
+//	[[Isgl3dDirector sharedInstance] addView:[HelloWorldView view]];
 	
 	// Run the director
 	[[Isgl3dDirector sharedInstance] run];
@@ -114,6 +116,13 @@
 
 - (void) applicationSignificantTimeChange:(UIApplication *)application {
 	[[Isgl3dDirector sharedInstance] onSignificantTimeChange];
+}
+
+
+// Placeholder for creating different views in separate targets
+-(void) createView
+{
+    
 }
 
 @end
