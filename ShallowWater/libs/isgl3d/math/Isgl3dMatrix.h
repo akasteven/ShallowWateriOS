@@ -27,6 +27,7 @@
 #import "Isgl3dVector.h"
 #import "Isgl3dQuaternion.h"
 
+
 #define im4(sxx, sxy, sxz, tx, syx, syy, syz, ty, szx, szy, szz, tz, swx, swy, swz, tw) im4Create(sxx, sxy, sxz, tx, syx, syy, syz, ty, szx, szy, szz, tz, swx, swy, swz, tw)
 #define im4Identity() im4CreateIdentity()
 

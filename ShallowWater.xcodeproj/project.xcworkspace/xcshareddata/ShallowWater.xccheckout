@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>13DFDC97-38FA-4D13-B1A4-DA3FDCF23919</string>
+	<string>E1E77B6C-C336-4759-BB96-CBB2C4F28193</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ShallowWater</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/akasteven/ShallowWateriOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ShallowWater/ShallowWater.xcodeproj/project.xcworkspace</string>
+	<string>ShallowWater.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7681E814-05B3-462B-9F0C-6091750AC11B</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/akasteven/ShallowWateriOS.git</string>

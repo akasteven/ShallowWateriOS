@@ -2,8 +2,8 @@
 //  ShallowWaterAppDelegate.h
 //  ShallowWater
 //
-//  Created by Steven Qiu on 13-11-22.
-//  Copyright 2013年 SKVRLab@BUAA. All rights reserved.
+//  Created by Steven Qiu on 13-11-23.
+//  Copyright 2013年 __MyCompanyName__. All rights reserved.
 //
 
 
@@ -57,13 +57,12 @@
 	_viewController.view = glView;
 
 	// Add view to window and make visible
-	[_window addSubview:_viewController.view];
-	[_window makeKeyAndVisible];
+//	[_window addSubview:_viewController.view];
+//	[_window makeKeyAndVisible];
 
     [self createView];
-    
 	// Creates the view(s) and adds them to the director
-//	[[Isgl3dDirector sharedInstance] addView:[HelloWorldView view]];
+	[[Isgl3dDirector sharedInstance] addView:[HelloWorldView view]];
 	
 	// Run the director
 	[[Isgl3dDirector sharedInstance] run];
@@ -119,10 +118,8 @@
 }
 
 
-// Placeholder for creating different views in separate targets
 -(void) createView
 {
     
 }
-
 @end
