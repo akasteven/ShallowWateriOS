@@ -301,6 +301,8 @@
 		B0F73EC81840A540002F0C06 /* Isgl3dPhysicsWorld.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EC41840A540002F0C06 /* Isgl3dPhysicsWorld.mm */; };
 		B0F73EC91840A540002F0C06 /* README in Resources */ = {isa = PBXBuildFile; fileRef = B0F73EC51840A540002F0C06 /* README */; };
 		B0F73ECC1840A6D5002F0C06 /* Isgl3dDemoCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F73ECB1840A6D5002F0C06 /* Isgl3dDemoCameraController.m */; };
+		B0F73ED01840A87E002F0C06 /* wall2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F73ECE1840A87E002F0C06 /* wall2.png */; };
+		B0F73ED11840A87E002F0C06 /* water05.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F73ECF1840A87E002F0C06 /* water05.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -947,6 +949,8 @@
 		B0F73EC51840A540002F0C06 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		B0F73ECA1840A6D5002F0C06 /* Isgl3dDemoCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Isgl3dDemoCameraController.h; sourceTree = "<group>"; };
 		B0F73ECB1840A6D5002F0C06 /* Isgl3dDemoCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Isgl3dDemoCameraController.m; sourceTree = "<group>"; };
+		B0F73ECE1840A87E002F0C06 /* wall2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wall2.png; path = Resources/wall2.png; sourceTree = "<group>"; };
+		B0F73ECF1840A87E002F0C06 /* water05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = water05.png; path = Resources/water05.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1013,6 +1017,8 @@
 		B0F735561840A0EE002F0C06 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B0F73ECE1840A87E002F0C06 /* wall2.png */,
+				B0F73ECF1840A87E002F0C06 /* water05.png */,
 				B0F735681840A0EE002F0C06 /* Info.plist */,
 				B0F735691840A0EE002F0C06 /* Default.png */,
 				B0F7356B1840A0EE002F0C06 /* Icon.png */,
@@ -2068,9 +2074,11 @@
 			files = (
 				B0F735721840A0EE002F0C06 /* LICENSE.IMGTEC in Resources */,
 				B0F735671840A0EE002F0C06 /* shadowMap.vsh in Resources */,
+				B0F73ED01840A87E002F0C06 /* wall2.png in Resources */,
 				B0F7356A1840A0EE002F0C06 /* Default.png in Resources */,
 				B0F7356C1840A0EE002F0C06 /* Icon.png in Resources */,
 				B0F7355B1840A0EE002F0C06 /* capture.vsh in Resources */,
+				B0F73ED11840A87E002F0C06 /* water05.png in Resources */,
 				B0F735591840A0EE002F0C06 /* capture.fsh in Resources */,
 				B0F73EC91840A540002F0C06 /* README in Resources */,
 				B0F735701840A0EE002F0C06 /* LICENSE.isgl3d in Resources */,
