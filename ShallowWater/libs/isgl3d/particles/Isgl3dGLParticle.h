@@ -71,7 +71,7 @@
  */
 @interface Isgl3dGLParticle : NSObject {
 	
-@private
+@protected
 	
 	float _size;
 	float _color[4];

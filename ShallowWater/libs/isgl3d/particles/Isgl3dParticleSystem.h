@@ -24,7 +24,7 @@
  */
 
 #import "Isgl3dGLParticle.h"
-
+#import "MortalParticle.h"
 /**
  * The Isgl3dParticleSystem extends the Isgl3dGLParticle to allow for large numbers of particles to be rendered
  * quickly.
@@ -65,6 +65,8 @@
  * @return The newly created particle.
  */
 - (Isgl3dGLParticle *) addParticle;
+
+- (MortalParticle *) addMoralParticle: (MortalParticle *)mortalParticle;
 
 /**
  * Removes a particle from the particle system.

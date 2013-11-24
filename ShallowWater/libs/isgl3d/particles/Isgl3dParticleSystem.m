@@ -61,6 +61,13 @@
 	return particle;
 }
 
+- (MortalParticle *) addMoralParticle: (MortalParticle *)mortalParticle{
+	
+	[_particles addObject:mortalParticle];
+	_dirty = YES;
+	return mortalParticle;
+}
+
 - (void) removeParticle:(Isgl3dGLParticle *)particle {
 	[_particles removeObject:particle];
 	
