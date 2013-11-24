@@ -1003,8 +1003,6 @@
 		B0F735551840A0EE002F0C06 /* ShallowWater */ = {
 			isa = PBXGroup;
 			children = (
-				B0F7377D1840A0F0002F0C06 /* TemplateView.h */,
-				B0F7377E1840A0F0002F0C06 /* TemplateView.m */,
 				B0F73ECD1840A6E1002F0C06 /* CommonController */,
 				B0F735561840A0EE002F0C06 /* Resources */,
 				B0F735731840A0EE002F0C06 /* libs */,
@@ -2012,6 +2010,8 @@
 		B0F73ECD1840A6E1002F0C06 /* CommonController */ = {
 			isa = PBXGroup;
 			children = (
+				B0F7377D1840A0F0002F0C06 /* TemplateView.h */,
+				B0F7377E1840A0F0002F0C06 /* TemplateView.m */,
 				B0F73ECA1840A6D5002F0C06 /* Isgl3dDemoCameraController.h */,
 				B0F73ECB1840A6D5002F0C06 /* Isgl3dDemoCameraController.m */,
 				B0F737771840A0F0002F0C06 /* ShallowWaterAppDelegate.h */,
