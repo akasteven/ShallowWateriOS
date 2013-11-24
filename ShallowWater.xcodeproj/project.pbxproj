@@ -300,8 +300,8 @@
 		B0F73ED11840A87E002F0C06 /* water05.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F73ECF1840A87E002F0C06 /* water05.png */; };
 		B0F73ED918422DBE002F0C06 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F73ED818422DBE002F0C06 /* GLKit.framework */; };
 		B0F73EF718424630002F0C06 /* MortalParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EF018424630002F0C06 /* MortalParticle.m */; };
-		B0F73EF818424630002F0C06 /* ShallowWaterMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EF218424630002F0C06 /* ShallowWaterMesh.m */; };
-		B0F73EF918424630002F0C06 /* TemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EF418424630002F0C06 /* TemplateView.m */; };
+		B0F73EF818424630002F0C06 /* ShallowWaterMesh.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EF218424630002F0C06 /* ShallowWaterMesh.mm */; };
+		B0F73EF918424630002F0C06 /* TemplateView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EF418424630002F0C06 /* TemplateView.mm */; };
 		B0F73EFA18424630002F0C06 /* WaterTerrain.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EF618424630002F0C06 /* WaterTerrain.m */; };
 		B0F73F021842464E002F0C06 /* Isgl3dDemoCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EFC1842464E002F0C06 /* Isgl3dDemoCameraController.m */; };
 		B0F73F031842464E002F0C06 /* Isgl3dViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EFE1842464E002F0C06 /* Isgl3dViewController.m */; };
@@ -950,9 +950,9 @@
 		B0F73EEF18424630002F0C06 /* MortalParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MortalParticle.h; path = DemoTemplate/MortalParticle.h; sourceTree = "<group>"; };
 		B0F73EF018424630002F0C06 /* MortalParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MortalParticle.m; path = DemoTemplate/MortalParticle.m; sourceTree = "<group>"; };
 		B0F73EF118424630002F0C06 /* ShallowWaterMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShallowWaterMesh.h; path = ShallowWater/DemoTemplate/ShallowWaterMesh.h; sourceTree = "<group>"; };
-		B0F73EF218424630002F0C06 /* ShallowWaterMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShallowWaterMesh.m; path = ShallowWater/DemoTemplate/ShallowWaterMesh.m; sourceTree = "<group>"; };
+		B0F73EF218424630002F0C06 /* ShallowWaterMesh.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ShallowWaterMesh.mm; path = ShallowWater/DemoTemplate/ShallowWaterMesh.mm; sourceTree = "<group>"; };
 		B0F73EF318424630002F0C06 /* TemplateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemplateView.h; path = ShallowWater/DemoTemplate/TemplateView.h; sourceTree = "<group>"; };
-		B0F73EF418424630002F0C06 /* TemplateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemplateView.m; path = ShallowWater/DemoTemplate/TemplateView.m; sourceTree = "<group>"; };
+		B0F73EF418424630002F0C06 /* TemplateView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = TemplateView.mm; path = ShallowWater/DemoTemplate/TemplateView.mm; sourceTree = "<group>"; };
 		B0F73EF518424630002F0C06 /* WaterTerrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaterTerrain.h; path = DemoTemplate/WaterTerrain.h; sourceTree = "<group>"; };
 		B0F73EF618424630002F0C06 /* WaterTerrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WaterTerrain.m; path = DemoTemplate/WaterTerrain.m; sourceTree = "<group>"; };
 		B0F73EFB1842464E002F0C06 /* Isgl3dDemoCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Isgl3dDemoCameraController.h; path = DemoCommon/Isgl3dDemoCameraController.h; sourceTree = "<group>"; };
@@ -2042,9 +2042,9 @@
 			isa = PBXGroup;
 			children = (
 				B0F73EF118424630002F0C06 /* ShallowWaterMesh.h */,
-				B0F73EF218424630002F0C06 /* ShallowWaterMesh.m */,
+				B0F73EF218424630002F0C06 /* ShallowWaterMesh.mm */,
 				B0F73EF318424630002F0C06 /* TemplateView.h */,
-				B0F73EF418424630002F0C06 /* TemplateView.m */,
+				B0F73EF418424630002F0C06 /* TemplateView.mm */,
 			);
 			name = DemoTemplate;
 			sourceTree = "<group>";
@@ -2136,7 +2136,7 @@
 				B0F73EB51840A4DD002F0C06 /* btSimpleDynamicsWorld.cpp in Sources */,
 				B0F73E8C1840A4DD002F0C06 /* btTriangleMesh.cpp in Sources */,
 				B0F73F031842464E002F0C06 /* Isgl3dViewController.m in Sources */,
-				B0F73EF818424630002F0C06 /* ShallowWaterMesh.m in Sources */,
+				B0F73EF818424630002F0C06 /* ShallowWaterMesh.mm in Sources */,
 				B0F73E951840A4DD002F0C06 /* btTriangleShapeEx.cpp in Sources */,
 				B0F735C91840A0EE002F0C06 /* Isgl3dFollowNode.m in Sources */,
 				B0F736871840A0EF002F0C06 /* Isgl3dParticlePath.m in Sources */,
@@ -2164,7 +2164,7 @@
 				B0F73E6E1840A4DD002F0C06 /* btBvhTriangleMeshShape.cpp in Sources */,
 				B0F736B81840A0EF002F0C06 /* Isgl3dTerrainMesh.m in Sources */,
 				B0F73E9F1840A4DD002F0C06 /* btGjkPairDetector.cpp in Sources */,
-				B0F73EF918424630002F0C06 /* TemplateView.m in Sources */,
+				B0F73EF918424630002F0C06 /* TemplateView.mm in Sources */,
 				B0F735FB1840A0EF002F0C06 /* Isgl3dPVRLoader.mm in Sources */,
 				B0F737341840A0F0002F0C06 /* PVRTDecompress.cpp in Sources */,
 				B0F7361F1840A0EF002F0C06 /* Isgl3dAccelerometer.m in Sources */,

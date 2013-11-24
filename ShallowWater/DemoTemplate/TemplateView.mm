@@ -18,7 +18,15 @@
         
         [Isgl3dDirector sharedInstance].shadowRenderingMethod = Isgl3dShadowPlanar;
         [Isgl3dDirector sharedInstance].shadowAlpha = 0.1;
-
+        
+        Isgl3dShadowCastingLight *light1  = [[Isgl3dShadowCastingLight alloc] initWithHexColor:@"333333" diffuseColor:@"FFFFFF" specularColor:@"FFFFFF" attenuation:0.001];
+        light1.position = iv3(8, 8, 8);
+        light1.isVisible = YES;
+		[self.scene addChild:light1];
+        
+        
+        
+        
 		[self schedule:@selector(tick:)];
 	}
 	return self;
