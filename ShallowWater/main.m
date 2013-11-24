@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[]) {
 	NSAutoreleasePool *pool = [NSAutoreleasePool new];
-	UIApplicationMain(argc, argv, nil, @"ShallowWaterAppDelegate");
+	UIApplicationMain(argc, argv, nil, @"AppDelegate");
 	[pool release];
 	return 0;
 }

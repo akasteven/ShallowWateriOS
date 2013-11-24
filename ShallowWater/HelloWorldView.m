@@ -51,3 +51,15 @@
 
 @end
 
+
+@implementation AppDelegate
+
+-(void) createView
+{
+    [Isgl3dDirector sharedInstance].deviceOrientation = Isgl3dOrientationLandscapeLeft;
+    Isgl3dView *view = [HelloWorldView view];
+    [[Isgl3dDirector sharedInstance] addView:view];
+    NSLog(@"What the fuck is going on!");
+}
+
+@end

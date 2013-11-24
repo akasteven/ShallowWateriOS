@@ -23,7 +23,6 @@
 	
 	// Instantiate the Isgl3dDirector and set background color
 	[Isgl3dDirector sharedInstance].backgroundColorString = @"333333ff"; 
-
 	// Set the device orientation
 	[Isgl3dDirector sharedInstance].deviceOrientation = Isgl3dOrientationLandscapeLeft;
 
@@ -57,12 +56,10 @@
 	_viewController.view = glView;
 
 	// Add view to window and make visible
-//	[_window addSubview:_viewController.view];
-//	[_window makeKeyAndVisible];
+	[_window addSubview:_viewController.view];
+	[_window makeKeyAndVisible];
 
     [self createView];
-	// Creates the view(s) and adds them to the director
-	[[Isgl3dDirector sharedInstance] addView:[HelloWorldView view]];
 	
 	// Run the director
 	[[Isgl3dDirector sharedInstance] run];
@@ -120,6 +117,6 @@
 
 -(void) createView
 {
-    
+
 }
 @end

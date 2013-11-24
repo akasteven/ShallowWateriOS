@@ -13,8 +13,18 @@
 @private
 	// The rendered text
 	Isgl3dMeshNode * _3dText;
-}
 
+}
 @end
 
 
+#import "ShallowWaterAppDelegate.h"
+
+@interface AppDelegate : ShallowWaterAppDelegate
+{
+    
+}
+
+-(void) createView;
+
+@end
