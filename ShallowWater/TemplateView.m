@@ -6,9 +6,9 @@
 //  Copyright 2013年 __MyCompanyName__. All rights reserved.
 //
 
-#import "HelloWorldView.h"
+#import "TemplateView.h"
 
-@implementation HelloWorldView
+@implementation TemplateView
 
 - (id) init {
 	
@@ -57,7 +57,7 @@
 -(void) createView
 {
     [Isgl3dDirector sharedInstance].deviceOrientation = Isgl3dOrientationLandscapeLeft;
-    Isgl3dView *view = [HelloWorldView view];
+    Isgl3dView *view = [TemplateView view];
     [[Isgl3dDirector sharedInstance] addView:view];
     NSLog(@"What the fuck is going on!");
 }

@@ -9,7 +9,6 @@
 
 #import "ShallowWaterAppDelegate.h"
 #import "Isgl3dViewController.h"
-#import "HelloWorldView.h"
 #import "Isgl3d.h"
 
 @implementation ShallowWaterAppDelegate

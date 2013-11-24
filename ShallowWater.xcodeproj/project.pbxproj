@@ -180,7 +180,7 @@
 		B0F737761840A0F0002F0C06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F737751840A0F0002F0C06 /* main.m */; };
 		B0F737791840A0F0002F0C06 /* ShallowWaterAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0F737781840A0F0002F0C06 /* ShallowWaterAppDelegate.mm */; };
 		B0F7377C1840A0F0002F0C06 /* Isgl3dViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7377B1840A0F0002F0C06 /* Isgl3dViewController.m */; };
-		B0F7377F1840A0F0002F0C06 /* HelloWorldView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7377E1840A0F0002F0C06 /* HelloWorldView.m */; };
+		B0F7377F1840A0F0002F0C06 /* TemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7377E1840A0F0002F0C06 /* TemplateView.m */; };
 		B0F73E4B1840A4DD002F0C06 /* btAxisSweep3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D241840A4DD002F0C06 /* btAxisSweep3.cpp */; };
 		B0F73E4C1840A4DD002F0C06 /* btBroadphaseProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D271840A4DD002F0C06 /* btBroadphaseProxy.cpp */; };
 		B0F73E4D1840A4DD002F0C06 /* btCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D291840A4DD002F0C06 /* btCollisionAlgorithm.cpp */; };
@@ -650,8 +650,8 @@
 		B0F737781840A0F0002F0C06 /* ShallowWaterAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ShallowWaterAppDelegate.mm; sourceTree = "<group>"; };
 		B0F7377A1840A0F0002F0C06 /* Isgl3dViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Isgl3dViewController.h; sourceTree = "<group>"; };
 		B0F7377B1840A0F0002F0C06 /* Isgl3dViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Isgl3dViewController.m; sourceTree = "<group>"; };
-		B0F7377D1840A0F0002F0C06 /* HelloWorldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldView.h; sourceTree = "<group>"; };
-		B0F7377E1840A0F0002F0C06 /* HelloWorldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldView.m; sourceTree = "<group>"; };
+		B0F7377D1840A0F0002F0C06 /* TemplateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateView.h; sourceTree = "<group>"; };
+		B0F7377E1840A0F0002F0C06 /* TemplateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TemplateView.m; sourceTree = "<group>"; };
 		B0F73D1F1840A4DD002F0C06 /* btBulletCollisionCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btBulletCollisionCommon.h; sourceTree = "<group>"; };
 		B0F73D201840A4DD002F0C06 /* btBulletDynamicsCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btBulletDynamicsCommon.h; sourceTree = "<group>"; };
 		B0F73D211840A4DD002F0C06 /* Bullet-C-Api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bullet-C-Api.h"; sourceTree = "<group>"; };
@@ -1003,8 +1003,8 @@
 		B0F735551840A0EE002F0C06 /* ShallowWater */ = {
 			isa = PBXGroup;
 			children = (
-				B0F7377D1840A0F0002F0C06 /* HelloWorldView.h */,
-				B0F7377E1840A0F0002F0C06 /* HelloWorldView.m */,
+				B0F7377D1840A0F0002F0C06 /* TemplateView.h */,
+				B0F7377E1840A0F0002F0C06 /* TemplateView.m */,
 				B0F73ECD1840A6E1002F0C06 /* CommonController */,
 				B0F735561840A0EE002F0C06 /* Resources */,
 				B0F735731840A0EE002F0C06 /* libs */,
@@ -2281,7 +2281,7 @@
 				B0F7368D1840A0EF002F0C06 /* Isgl3dParticleSystem.m in Sources */,
 				B0F737111840A0F0002F0C06 /* Isgl3dUShortArray.m in Sources */,
 				B0F73EBD1840A4DD002F0C06 /* btSerializer.cpp in Sources */,
-				B0F7377F1840A0F0002F0C06 /* HelloWorldView.m in Sources */,
+				B0F7377F1840A0F0002F0C06 /* TemplateView.m in Sources */,
 				B0F73E521840A4DD002F0C06 /* btOverlappingPairCache.cpp in Sources */,
 				B0F736AF1840A0EF002F0C06 /* Isgl3dPrimitive.m in Sources */,
 				B0F7376E1840A0F0002F0C06 /* PVRTVector.cpp in Sources */,

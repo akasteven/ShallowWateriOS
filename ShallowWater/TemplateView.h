@@ -8,7 +8,7 @@
 
 #import "isgl3d.h"
 
-@interface HelloWorldView : Isgl3dBasic3DView {
+@interface TemplateView : Isgl3dBasic3DView {
 
 @private
 	// The rendered text
