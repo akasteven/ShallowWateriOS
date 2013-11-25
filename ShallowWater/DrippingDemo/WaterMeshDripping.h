@@ -92,21 +92,13 @@
 
 -(float) getHeight:(float) x z:(float) z;
 
--(GLKVector2) getVelocity:(float) x z:(float) z;
+-(GLKVector2) getVelocity2D:(float) x z:(float) z;
 
 -(GLKVector3) getVelocity3D:(float) x z:(float) z;
 
 -(void) setWaterTerrain:(WaterTerrain *)waterTerrain;
 
--(void) setParticleSystem:(Isgl3dParticleSystem *) parsys;
 
--(void) BreakWave;
-
--(void) SetParticleBoundary;
-
--(void) RemoveParticles;
-
--(void) MoveParticles;
 
 
 @end

@@ -50,6 +50,10 @@
     _tsunami = [_container createNodeWithMesh:_water andMaterial:material];
     _tsunami.alpha = 1.0;
     _tsunami.doubleSided = YES;
+    
+    Isgl3dTextureMaterial * poolMatrtial = [Isgl3dTextureMaterial materialWithTextureFile:@"wall2.png" shininess:0.9];
+
+    
 }
 
 

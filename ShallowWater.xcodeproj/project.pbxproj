@@ -11,6 +11,10 @@
 		B087FB96184335D500970C58 /* WaterTerrain.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7404218433376002F0C06 /* WaterTerrain.m */; };
 		B087FB991843395100970C58 /* WaterMeshDripping.mm in Sources */ = {isa = PBXBuildFile; fileRef = B087FB981843395100970C58 /* WaterMeshDripping.mm */; };
 		B087FB9A184339BC00970C58 /* WaterMeshDripping.mm in Sources */ = {isa = PBXBuildFile; fileRef = B087FB981843395100970C58 /* WaterMeshDripping.mm */; };
+		B087FB9C1843491600970C58 /* wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B087FB9B1843491600970C58 /* wall.jpg */; };
+		B087FB9E1843496400970C58 /* wall0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B087FB9D1843496400970C58 /* wall0.jpg */; };
+		B087FB9F18434C0700970C58 /* wall0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B087FB9D1843496400970C58 /* wall0.jpg */; };
+		B087FBA018434C0700970C58 /* wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B087FB9B1843491600970C58 /* wall.jpg */; };
 		B0F7354C1840A0EE002F0C06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354B1840A0EE002F0C06 /* QuartzCore.framework */; };
 		B0F7354E1840A0EE002F0C06 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354D1840A0EE002F0C06 /* OpenGLES.framework */; };
 		B0F735501840A0EE002F0C06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354F1840A0EE002F0C06 /* CoreGraphics.framework */; };
@@ -613,6 +617,8 @@
 /* Begin PBXFileReference section */
 		B087FB971843395100970C58 /* WaterMeshDripping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaterMeshDripping.h; path = ShallowWater/DrippingDemo/WaterMeshDripping.h; sourceTree = "<group>"; };
 		B087FB981843395100970C58 /* WaterMeshDripping.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = WaterMeshDripping.mm; path = ShallowWater/DrippingDemo/WaterMeshDripping.mm; sourceTree = "<group>"; };
+		B087FB9B1843491600970C58 /* wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wall.jpg; path = Resources/wall.jpg; sourceTree = "<group>"; };
+		B087FB9D1843496400970C58 /* wall0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wall0.jpg; path = Resources/wall0.jpg; sourceTree = "<group>"; };
 		B0F735481840A0EE002F0C06 /* ShallowWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShallowWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F7354B1840A0EE002F0C06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B0F7354D1840A0EE002F0C06 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1351,6 +1357,8 @@
 		B0F735561840A0EE002F0C06 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B087FB9D1843496400970C58 /* wall0.jpg */,
+				B087FB9B1843491600970C58 /* wall.jpg */,
 				B0F73ECE1840A87E002F0C06 /* wall2.png */,
 				B0F73ECF1840A87E002F0C06 /* water05.png */,
 				B0F735691840A0EE002F0C06 /* Default.png */,
@@ -2453,6 +2461,7 @@
 			files = (
 				B0F735721840A0EE002F0C06 /* LICENSE.IMGTEC in Resources */,
 				B0F735671840A0EE002F0C06 /* shadowMap.vsh in Resources */,
+				B087FB9E1843496400970C58 /* wall0.jpg in Resources */,
 				B0F73ED01840A87E002F0C06 /* wall2.png in Resources */,
 				B0F7356A1840A0EE002F0C06 /* Default.png in Resources */,
 				B0F7356C1840A0EE002F0C06 /* Icon.png in Resources */,
@@ -2464,6 +2473,7 @@
 				B0F7356E1840A0EE002F0C06 /* Icon@2x.png in Resources */,
 				B0F735611840A0EE002F0C06 /* particle.fsh in Resources */,
 				B0F735631840A0EE002F0C06 /* particle.vsh in Resources */,
+				B087FB9C1843491600970C58 /* wall.jpg in Resources */,
 				B0F735651840A0EE002F0C06 /* shadowMap.fsh in Resources */,
 				B0F7355D1840A0EE002F0C06 /* generic.fsh in Resources */,
 				B0F7355F1840A0EE002F0C06 /* generic.vsh in Resources */,
@@ -2474,6 +2484,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B087FB9F18434C0700970C58 /* wall0.jpg in Resources */,
+				B087FBA018434C0700970C58 /* wall.jpg in Resources */,
 				B0F7402618433060002F0C06 /* LICENSE.IMGTEC in Resources */,
 				B0F7402718433060002F0C06 /* shadowMap.vsh in Resources */,
 				B0F7402818433060002F0C06 /* wall2.png in Resources */,
