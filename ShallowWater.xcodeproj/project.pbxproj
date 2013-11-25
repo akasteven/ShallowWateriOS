@@ -7,14 +7,319 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B04926A3184396C30091843D /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = B04926A2184396C30091843D /* particle.png */; };
+		B04926A4184396D60091843D /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = B04926A2184396C30091843D /* particle.png */; };
 		B087FB95184335CB00970C58 /* MortalParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7404018433376002F0C06 /* MortalParticle.m */; };
 		B087FB96184335D500970C58 /* WaterTerrain.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7404218433376002F0C06 /* WaterTerrain.m */; };
-		B087FB991843395100970C58 /* WaterMeshDripping.mm in Sources */ = {isa = PBXBuildFile; fileRef = B087FB981843395100970C58 /* WaterMeshDripping.mm */; };
 		B087FB9A184339BC00970C58 /* WaterMeshDripping.mm in Sources */ = {isa = PBXBuildFile; fileRef = B087FB981843395100970C58 /* WaterMeshDripping.mm */; };
 		B087FB9C1843491600970C58 /* wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B087FB9B1843491600970C58 /* wall.jpg */; };
 		B087FB9E1843496400970C58 /* wall0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B087FB9D1843496400970C58 /* wall0.jpg */; };
 		B087FB9F18434C0700970C58 /* wall0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B087FB9D1843496400970C58 /* wall0.jpg */; };
 		B087FBA018434C0700970C58 /* wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B087FB9B1843491600970C58 /* wall.jpg */; };
+		B087FBA31843761C00970C58 /* Isgl3dOvoid.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736A81840A0EF002F0C06 /* Isgl3dOvoid.m */; };
+		B087FBA41843761C00970C58 /* btSphereBoxCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D611840A4DD002F0C06 /* btSphereBoxCollisionAlgorithm.cpp */; };
+		B087FBA51843761C00970C58 /* btAlignedAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E301840A4DD002F0C06 /* btAlignedAllocator.cpp */; };
+		B087FBA61843761C00970C58 /* btGeometryUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E361840A4DD002F0C06 /* btGeometryUtil.cpp */; };
+		B087FBA71843761C00970C58 /* PVRTgles2Ext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F7371E1840A0F0002F0C06 /* PVRTgles2Ext.cpp */; };
+		B087FBA81843761C00970C58 /* Isgl3dTextureMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7365B1840A0EF002F0C06 /* Isgl3dTextureMaterial.m */; };
+		B087FBA91843761C00970C58 /* Isgl3dFloatArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7370A1840A0F0002F0C06 /* Isgl3dFloatArray.m */; };
+		B087FBAA1843761C00970C58 /* btDiscreteDynamicsWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E201840A4DD002F0C06 /* btDiscreteDynamicsWorld.cpp */; };
+		B087FBAB1843761C00970C58 /* btSimpleDynamicsWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E251840A4DD002F0C06 /* btSimpleDynamicsWorld.cpp */; };
+		B087FBAC1843761C00970C58 /* btTriangleMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DAF1840A4DD002F0C06 /* btTriangleMesh.cpp */; };
+		B087FBAD1843761C00970C58 /* Isgl3dViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EFE1842464E002F0C06 /* Isgl3dViewController.m */; };
+		B087FBAF1843761C00970C58 /* btTriangleShapeEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DC81840A4DD002F0C06 /* btTriangleShapeEx.cpp */; };
+		B087FBB01843761C00970C58 /* Isgl3dFollowNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735C81840A0EE002F0C06 /* Isgl3dFollowNode.m */; };
+		B087FBB11843761C00970C58 /* Isgl3dParticlePath.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736861840A0EF002F0C06 /* Isgl3dParticlePath.m */; };
+		B087FBB21843761C00970C58 /* btSphereTriangleCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D651840A4DD002F0C06 /* btSphereTriangleCollisionAlgorithm.cpp */; };
+		B087FBB31843761C00970C58 /* btEmptyCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D571840A4DD002F0C06 /* btEmptyCollisionAlgorithm.cpp */; };
+		B087FBB41843761C00970C58 /* Isgl3dScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735FD1840A0EF002F0C06 /* Isgl3dScheduler.m */; };
+		B087FBB51843761C00970C58 /* Isgl3dGLRenderer1State.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736C51840A0EF002F0C06 /* Isgl3dGLRenderer1State.m */; };
+		B087FBB61843761C00970C58 /* gim_box_set.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DCE1840A4DD002F0C06 /* gim_box_set.cpp */; };
+		B087FBB71843761C00970C58 /* btConvexHull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E331840A4DD002F0C06 /* btConvexHull.cpp */; };
+		B087FBB81843761C00970C58 /* btGeneric6DofConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E051840A4DD002F0C06 /* btGeneric6DofConstraint.cpp */; };
+		B087FBB91843761C00970C58 /* Isgl3dPhysicsObject3D.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EC21840A540002F0C06 /* Isgl3dPhysicsObject3D.mm */; };
+		B087FBBA1843761C00970C58 /* PVRTBoneBatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737301840A0F0002F0C06 /* PVRTBoneBatch.cpp */; };
+		B087FBBB1843761C00970C58 /* Isgl3dParticleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735D11840A0EE002F0C06 /* Isgl3dParticleNode.m */; };
+		B087FBBC1843761C00970C58 /* Isgl3dBoneBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735AE1840A0EE002F0C06 /* Isgl3dBoneBatch.m */; };
+		B087FBBD1843761C00970C58 /* Isgl3dGLParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736891840A0EF002F0C06 /* Isgl3dGLParticle.m */; };
+		B087FBBE1843761C00970C58 /* btGImpactBvh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DBE1840A4DD002F0C06 /* btGImpactBvh.cpp */; };
+		B087FBBF1843761C00970C58 /* Isgl3dGLDepthRenderTexture2.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736141840A0EF002F0C06 /* Isgl3dGLDepthRenderTexture2.m */; };
+		B087FBC01843761C00970C58 /* Isgl3dFollowCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735BE1840A0EE002F0C06 /* Isgl3dFollowCamera.m */; };
+		B087FBC11843761C00970C58 /* PVRTMisc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737471840A0F0002F0C06 /* PVRTMisc.cpp */; };
+		B087FBC21843761C00970C58 /* Isgl3dFpsRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735DE1840A0EF002F0C06 /* Isgl3dFpsRenderer.m */; };
+		B087FBC31843761C00970C58 /* Isgl3dGLContext1.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736041840A0EF002F0C06 /* Isgl3dGLContext1.m */; };
+		B087FBC41843761C00970C58 /* Isgl3dQuaternion.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736651840A0EF002F0C06 /* Isgl3dQuaternion.m */; };
+		B087FBC51843761C00970C58 /* PVRTMatrixX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737441840A0F0002F0C06 /* PVRTMatrixX.cpp */; };
+		B087FBC61843761C00970C58 /* btBroadphaseProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D271840A4DD002F0C06 /* btBroadphaseProxy.cpp */; };
+		B087FBC71843761C00970C58 /* btBvhTriangleMeshShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D701840A4DD002F0C06 /* btBvhTriangleMeshShape.cpp */; };
+		B087FBC81843761C00970C58 /* Isgl3dTerrainMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736B71840A0EF002F0C06 /* Isgl3dTerrainMesh.m */; };
+		B087FBC91843761C00970C58 /* btGjkPairDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DEA1840A4DD002F0C06 /* btGjkPairDetector.cpp */; };
+		B087FBCB1843761C00970C58 /* Isgl3dPVRLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0F735FA1840A0EF002F0C06 /* Isgl3dPVRLoader.mm */; };
+		B087FBCC1843761C00970C58 /* PVRTDecompress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737331840A0F0002F0C06 /* PVRTDecompress.cpp */; };
+		B087FBCD1843761C00970C58 /* Isgl3dAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7361E1840A0EF002F0C06 /* Isgl3dAccelerometer.m */; };
+		B087FBCE1843761C00970C58 /* Isgl3dGLRenderer2State.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736CC1840A0EF002F0C06 /* Isgl3dGLRenderer2State.m */; };
+		B087FBCF1843761C00970C58 /* btCylinderShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D891840A4DD002F0C06 /* btCylinderShape.cpp */; };
+		B087FBD01843761C00970C58 /* btUniformScalingShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DB41840A4DD002F0C06 /* btUniformScalingShape.cpp */; };
+		B087FBD11843761C00970C58 /* Isgl3dCustomShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736D31840A0EF002F0C06 /* Isgl3dCustomShader.m */; };
+		B087FBD21843761C00970C58 /* Isgl3dGLVBOFactory1.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7360D1840A0EF002F0C06 /* Isgl3dGLVBOFactory1.m */; };
+		B087FBD31843761C00970C58 /* btConvexInternalShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D811840A4DD002F0C06 /* btConvexInternalShape.cpp */; };
+		B087FBD41843761C00970C58 /* btStaticPlaneShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DA01840A4DD002F0C06 /* btStaticPlaneShape.cpp */; };
+		B087FBD51843761C00970C58 /* btSimpleBroadphase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D381840A4DD002F0C06 /* btSimpleBroadphase.cpp */; };
+		B087FBD61843761C00970C58 /* Isgl3dActionSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735A11840A0EE002F0C06 /* Isgl3dActionSequence.m */; };
+		B087FBD71843761C00970C58 /* Isgl3dScene3D.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735D41840A0EE002F0C06 /* Isgl3dScene3D.m */; };
+		B087FBD81843761C00970C58 /* SphereTriangleDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D691840A4DD002F0C06 /* SphereTriangleDetector.cpp */; };
+		B087FBD91843761C00970C58 /* btTriangleIndexVertexMaterialArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DAC1840A4DD002F0C06 /* btTriangleIndexVertexMaterialArray.cpp */; };
+		B087FBDA1843761C00970C58 /* Isgl3dCone.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736931840A0EF002F0C06 /* Isgl3dCone.m */; };
+		B087FBDB1843761C00970C58 /* Isgl3dBillboardNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735C51840A0EE002F0C06 /* Isgl3dBillboardNode.m */; };
+		B087FBDC1843761C00970C58 /* btGImpactCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DC01840A4DD002F0C06 /* btGImpactCollisionAlgorithm.cpp */; };
+		B087FBDD1843761C00970C58 /* btSequentialImpulseConstraintSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E101840A4DD002F0C06 /* btSequentialImpulseConstraintSolver.cpp */; };
+		B087FBDE1843761C00970C58 /* Isgl3dFountainParticleGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736801840A0EF002F0C06 /* Isgl3dFountainParticleGenerator.m */; };
+		B087FBDF1843761C00970C58 /* btSimulationIslandManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D5F1840A4DD002F0C06 /* btSimulationIslandManager.cpp */; };
+		B087FBE01843761C00970C58 /* btSphereShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D9E1840A4DD002F0C06 /* btSphereShape.cpp */; };
+		B087FBE11843761C00970C58 /* btConvex2dShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D7D1840A4DD002F0C06 /* btConvex2dShape.cpp */; };
+		B087FBE21843761C00970C58 /* btConvexShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D851840A4DD002F0C06 /* btConvexShape.cpp */; };
+		B087FBE31843761C00970C58 /* btGjkEpaPenetrationDepthSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DE81840A4DD002F0C06 /* btGjkEpaPenetrationDepthSolver.cpp */; };
+		B087FBE41843761C00970C58 /* btShapeHull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D9C1840A4DD002F0C06 /* btShapeHull.cpp */; };
+		B087FBE51843761C00970C58 /* Isgl3dSphere.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736B41840A0EF002F0C06 /* Isgl3dSphere.m */; };
+		B087FBE61843761C00970C58 /* Isgl3dPrimitiveFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736B11840A0EF002F0C06 /* Isgl3dPrimitiveFactory.m */; };
+		B087FBE71843761C00970C58 /* btSphereSphereCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D631840A4DD002F0C06 /* btSphereSphereCollisionAlgorithm.cpp */; };
+		B087FBE81843761C00970C58 /* Isgl3dShadowMapShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736E81840A0EF002F0C06 /* Isgl3dShadowMapShader.m */; };
+		B087FBE91843761C00970C58 /* btMultiSphereShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D941840A4DD002F0C06 /* btMultiSphereShape.cpp */; };
+		B087FBEA1843761C00970C58 /* btTriangleIndexVertexArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DAA1840A4DD002F0C06 /* btTriangleIndexVertexArray.cpp */; };
+		B087FBEB1843761C00970C58 /* btDbvtBroadphase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D2D1840A4DD002F0C06 /* btDbvtBroadphase.cpp */; };
+		B087FBEC1843761C00970C58 /* Isgl3dActionMove.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735921840A0EE002F0C06 /* Isgl3dActionMove.m */; };
+		B087FBED1843761C00970C58 /* btSolve2LinearConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E141840A4DD002F0C06 /* btSolve2LinearConstraint.cpp */; };
+		B087FBEE1843761C00970C58 /* Isgl3dArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F737031840A0F0002F0C06 /* Isgl3dArray.m */; };
+		B087FBEF1843761C00970C58 /* Isgl3dTouchScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736371840A0EF002F0C06 /* Isgl3dTouchScreen.m */; };
+		B087FBF01843761C00970C58 /* Isgl3dTweener.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736EF1840A0F0002F0C06 /* Isgl3dTweener.m */; };
+		B087FBF11843761C00970C58 /* btConvexPointCloudShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D831840A4DD002F0C06 /* btConvexPointCloudShape.cpp */; };
+		B087FBF21843761C00970C58 /* btBox2dBox2dCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D3D1840A4DD002F0C06 /* btBox2dBox2dCollisionAlgorithm.cpp */; };
+		B087FBF31843761C00970C58 /* isgl3d.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736431840A0EF002F0C06 /* isgl3d.m */; };
+		B087FBF41843761C00970C58 /* Isgl3dObject3DGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736311840A0EF002F0C06 /* Isgl3dObject3DGrabber.m */; };
+		B087FBF51843761C00970C58 /* btConvexTriangleMeshShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D871840A4DD002F0C06 /* btConvexTriangleMeshShape.cpp */; };
+		B087FBF61843761C00970C58 /* Isgl3dTween.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736EC1840A0F0002F0C06 /* Isgl3dTween.m */; };
+		B087FBF71843761C00970C58 /* Isgl3dInternalShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736DC1840A0EF002F0C06 /* Isgl3dInternalShader.m */; };
+		B087FBF81843761C00970C58 /* btBox2dShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D6C1840A4DD002F0C06 /* btBox2dShape.cpp */; };
+		B087FBF91843761C00970C58 /* Isgl3dShadowCastingLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7364B1840A0EF002F0C06 /* Isgl3dShadowCastingLight.m */; };
+		B087FBFA1843761C00970C58 /* btConvex2dConvex2dAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D4D1840A4DD002F0C06 /* btConvex2dConvex2dAlgorithm.cpp */; };
+		B087FBFB1843761C00970C58 /* btMultiSapBroadphase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D311840A4DD002F0C06 /* btMultiSapBroadphase.cpp */; };
+		B087FBFC1843761C00970C58 /* Isgl3dColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F737071840A0F0002F0C06 /* Isgl3dColorUtil.m */; };
+		B087FBFD1843761C00970C58 /* btConeShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D7B1840A4DD002F0C06 /* btConeShape.cpp */; };
+		B087FBFE1843761C00970C58 /* Isgl3dAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735AB1840A0EE002F0C06 /* Isgl3dAnimationController.m */; };
+		B087FBFF1843761C00970C58 /* btUnionFind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D671840A4DD002F0C06 /* btUnionFind.cpp */; };
+		B087FC001843761C00970C58 /* Isgl3dGLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735EA1840A0EF002F0C06 /* Isgl3dGLTexture.m */; };
+		B087FC011843761C00970C58 /* PVRTQuaternionF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737561840A0F0002F0C06 /* PVRTQuaternionF.cpp */; };
+		B087FC021843761C00970C58 /* btManifoldResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D5D1840A4DD002F0C06 /* btManifoldResult.cpp */; };
+		B087FC031843761C00970C58 /* gim_tri_collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DDB1840A4DD002F0C06 /* gim_tri_collision.cpp */; };
+		B087FC041843761C00970C58 /* Isgl3dPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736AB1840A0EF002F0C06 /* Isgl3dPlane.m */; };
+		B087FC051843761C00970C58 /* Bullet-C-API.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E271840A4DD002F0C06 /* Bullet-C-API.cpp */; };
+		B087FC061843761C00970C58 /* btPersistentManifold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DEF1840A4DD002F0C06 /* btPersistentManifold.cpp */; };
+		B087FC071843761C00970C58 /* btContinuousDynamicsWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E1E1840A4DD002F0C06 /* btContinuousDynamicsWorld.cpp */; };
+		B087FC081843761C00970C58 /* Isgl3dMultiMaterialCube.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736A51840A0EF002F0C06 /* Isgl3dMultiMaterialCube.m */; };
+		B087FC091843761C00970C58 /* btConeTwistConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DFF1840A4DD002F0C06 /* btConeTwistConstraint.cpp */; };
+		B087FC0A1843761C00970C58 /* Isgl3dActionEase.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735831840A0EE002F0C06 /* Isgl3dActionEase.m */; };
+		B087FC0B1843761C00970C58 /* btCollisionDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D451840A4DD002F0C06 /* btCollisionDispatcher.cpp */; };
+		B087FC0C1843761C00970C58 /* Isgl3dGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736D91840A0EF002F0C06 /* Isgl3dGLProgram.m */; };
+		B087FC0D1843761C00970C58 /* Isgl3dColorMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736521840A0EF002F0C06 /* Isgl3dColorMaterial.m */; };
+		B087FC0E1843761C00970C58 /* Isgl3dGoursatSurface.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736A21840A0EF002F0C06 /* Isgl3dGoursatSurface.m */; };
+		B087FC0F1843761C00970C58 /* Isgl3dCube.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736961840A0EF002F0C06 /* Isgl3dCube.m */; };
+		B087FC101843761C00970C58 /* Isgl3dMeshNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735CB1840A0EE002F0C06 /* Isgl3dMeshNode.m */; };
+		B087FC111843761C00970C58 /* btDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D2F1840A4DD002F0C06 /* btDispatcher.cpp */; };
+		B087FC121843761C00970C58 /* PVRTTextureAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F7372C1840A0F0002F0C06 /* PVRTTextureAPI.cpp */; };
+		B087FC131843761C00970C58 /* gim_memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DD81840A4DD002F0C06 /* gim_memory.cpp */; };
+		B087FC141843761C00970C58 /* PVRTPFXParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F7374E1840A0F0002F0C06 /* PVRTPFXParser.cpp */; };
+		B087FC151843761C00970C58 /* Isgl3dGLU.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7365F1840A0EF002F0C06 /* Isgl3dGLU.m */; };
+		B087FC161843761C00970C58 /* Isgl3dEvent3DHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736271840A0EF002F0C06 /* Isgl3dEvent3DHandler.m */; };
+		B087FC171843761C00970C58 /* Isgl3dActionAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7357A1840A0EE002F0C06 /* Isgl3dActionAlpha.m */; };
+		B087FC181843761C00970C58 /* btEmptyShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D8B1840A4DD002F0C06 /* btEmptyShape.cpp */; };
+		B087FC191843761C00970C58 /* Isgl3dMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736551840A0EF002F0C06 /* Isgl3dMaterial.m */; };
+		B087FC1A1843761C00970C58 /* btHingeConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E0B1840A4DD002F0C06 /* btHingeConstraint.cpp */; };
+		B087FC1B1843761C00970C58 /* Isgl3dLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7370D1840A0F0002F0C06 /* Isgl3dLog.m */; };
+		B087FC1C1843761C00970C58 /* Isgl3dShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736E21840A0EF002F0C06 /* Isgl3dShader.m */; };
+		B087FC1D1843761C00970C58 /* btGjkConvexCast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DE41840A4DD002F0C06 /* btGjkConvexCast.cpp */; };
+		B087FC1E1843761C00970C58 /* Isgl3dGLUIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736F91840A0F0002F0C06 /* Isgl3dGLUIImage.m */; };
+		B087FC1F1843761C00970C58 /* PVRTPrint3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737511840A0F0002F0C06 /* PVRTPrint3D.cpp */; };
+		B087FC201843761C00970C58 /* btConvexConvexAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D511840A4DD002F0C06 /* btConvexConvexAlgorithm.cpp */; };
+		B087FC211843761C00970C58 /* btWheelInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E2C1840A4DD002F0C06 /* btWheelInfo.cpp */; };
+		B087FC221843761C00970C58 /* Isgl3dSingleTouchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7363C1840A0EF002F0C06 /* Isgl3dSingleTouchFilter.m */; };
+		B087FC231843761C00970C58 /* PVRTError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737361840A0F0002F0C06 /* PVRTError.cpp */; };
+		B087FC241843761C00970C58 /* btCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D291840A4DD002F0C06 /* btCollisionAlgorithm.cpp */; };
+		B087FC251843761C00970C58 /* PVRTPrint3DAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737241840A0F0002F0C06 /* PVRTPrint3DAPI.cpp */; };
+		B087FC261843761C00970C58 /* btPoint2PointConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E0E1840A4DD002F0C06 /* btPoint2PointConstraint.cpp */; };
+		B087FC271843761C00970C58 /* Isgl3dSkeletonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735B71840A0EE002F0C06 /* Isgl3dSkeletonNode.m */; };
+		B087FC281843761C00970C58 /* Isgl3dGenericShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736D61840A0EF002F0C06 /* Isgl3dGenericShader.m */; };
+		B087FC291843761C00970C58 /* Isgl3dGLRenderer2.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736C91840A0EF002F0C06 /* Isgl3dGLRenderer2.m */; };
+		B087FC2A1843761C00970C58 /* WaterTerrain.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7404218433376002F0C06 /* WaterTerrain.m */; };
+		B087FC2B1843761C00970C58 /* btQuickprof.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E411840A4DD002F0C06 /* btQuickprof.cpp */; };
+		B087FC2C1843761C00970C58 /* PVRTTrans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737671840A0F0002F0C06 /* PVRTTrans.cpp */; };
+		B087FC2D1843761C00970C58 /* btTetrahedronShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DA41840A4DD002F0C06 /* btTetrahedronShape.cpp */; };
+		B087FC2E1843761C00970C58 /* btCollisionShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D751840A4DD002F0C06 /* btCollisionShape.cpp */; };
+		B087FC2F1843761C00970C58 /* Isgl3dAnimatedTextureMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7364F1840A0EF002F0C06 /* Isgl3dAnimatedTextureMaterial.m */; };
+		B087FC301843761C00970C58 /* Isgl3dGLDepthRenderTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735E41840A0EF002F0C06 /* Isgl3dGLDepthRenderTexture.m */; };
+		B087FC311843761C00970C58 /* Isgl3dGestureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7362E1840A0EF002F0C06 /* Isgl3dGestureManager.m */; };
+		B087FC321843761C00970C58 /* PVRTResourceFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F7375A1840A0F0002F0C06 /* PVRTResourceFile.cpp */; };
+		B087FC331843761C00970C58 /* Isgl3dEllipsoid.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7369F1840A0EF002F0C06 /* Isgl3dEllipsoid.m */; };
+		B087FC341843761C00970C58 /* Isgl3dDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735D81840A0EF002F0C06 /* Isgl3dDirector.m */; };
+		B087FC351843761C00970C58 /* Isgl3dActionInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7358C1840A0EE002F0C06 /* Isgl3dActionInterval.m */; };
+		B087FC361843761C00970C58 /* btGhostObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D591840A4DD002F0C06 /* btGhostObject.cpp */; };
+		B087FC371843761C00970C58 /* Isgl3dBoneNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735B11840A0EE002F0C06 /* Isgl3dBoneNode.m */; };
+		B087FC381843761C00970C58 /* btHeightfieldTerrainShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D8D1840A4DD002F0C06 /* btHeightfieldTerrainShape.cpp */; };
+		B087FC391843761C00970C58 /* Isgl3dGLTextureFactoryState.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735F01840A0EF002F0C06 /* Isgl3dGLTextureFactoryState.m */; };
+		B087FC3A1843761C00970C58 /* btVoronoiSimplexSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DF71840A4DD002F0C06 /* btVoronoiSimplexSolver.cpp */; };
+		B087FC3B1843761C00970C58 /* btBoxBoxCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D3F1840A4DD002F0C06 /* btBoxBoxCollisionAlgorithm.cpp */; };
+		B087FC3C1843761C00970C58 /* Isgl3dAnimatedMeshNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735A81840A0EE002F0C06 /* Isgl3dAnimatedMeshNode.m */; };
+		B087FC3D1843761C00970C58 /* Isgl3dShaderMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736581840A0EF002F0C06 /* Isgl3dShaderMaterial.m */; };
+		B087FC3E1843761C00970C58 /* PVRTMatrixF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737421840A0F0002F0C06 /* PVRTMatrixF.cpp */; };
+		B087FC3F1843761C00970C58 /* Isgl3dMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736621840A0EF002F0C06 /* Isgl3dMatrix.m */; };
+		B087FC401843761C00970C58 /* Isgl3dSpringCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735C11840A0EE002F0C06 /* Isgl3dSpringCamera.m */; };
+		B087FC411843761C00970C58 /* Isgl3dCubeSphere.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736991840A0EF002F0C06 /* Isgl3dCubeSphere.m */; };
+		B087FC421843761C00970C58 /* MortalParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7404018433376002F0C06 /* MortalParticle.m */; };
+		B087FC431843761C00970C58 /* Isgl3dShaderState.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736E51840A0EF002F0C06 /* Isgl3dShaderState.m */; };
+		B087FC441843761C00970C58 /* btCompoundCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D4B1840A4DD002F0C06 /* btCompoundCollisionAlgorithm.cpp */; };
+		B087FC451843761C00970C58 /* PVRTBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F7371A1840A0F0002F0C06 /* PVRTBackground.cpp */; };
+		B087FC461843761C00970C58 /* PVRTQuaternionX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737581840A0F0002F0C06 /* PVRTQuaternionX.cpp */; };
+		B087FC471843761C00970C58 /* PVRTVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737701840A0F0002F0C06 /* PVRTVertex.cpp */; };
+		B087FC481843761C00970C58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EFF1842464E002F0C06 /* main.m */; };
+		B087FC491843761C00970C58 /* Isgl3dGLUIComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736F61840A0F0002F0C06 /* Isgl3dGLUIComponent.m */; };
+		B087FC4A1843761C00970C58 /* Isgl3dKeyframeMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735B41840A0EE002F0C06 /* Isgl3dKeyframeMesh.m */; };
+		B087FC4B1843761C00970C58 /* btGenericPoolAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DBB1840A4DD002F0C06 /* btGenericPoolAllocator.cpp */; };
+		B087FC4C1843761C00970C58 /* btKinematicCharacterController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DFC1840A4DD002F0C06 /* btKinematicCharacterController.cpp */; };
+		B087FC4D1843761C00970C58 /* btDefaultCollisionConfiguration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D551840A4DD002F0C06 /* btDefaultCollisionConfiguration.cpp */; };
+		B087FC4E1843761C00970C58 /* PVRTShadowVol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F7375D1840A0F0002F0C06 /* PVRTShadowVol.cpp */; };
+		B087FC4F1843761C00970C58 /* Isgl3dActionTween.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735A41840A0EE002F0C06 /* Isgl3dActionTween.m */; };
+		B087FC501843761C00970C58 /* btTriangleCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DA81840A4DD002F0C06 /* btTriangleCallback.cpp */; };
+		B087FC511843761C00970C58 /* btCompoundShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D771840A4DD002F0C06 /* btCompoundShape.cpp */; };
+		B087FC521843761C00970C58 /* btConvexCast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DE01840A4DD002F0C06 /* btConvexCast.cpp */; };
+		B087FC531843761C00970C58 /* Isgl3dGLMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735E71840A0EF002F0C06 /* Isgl3dGLMesh.m */; };
+		B087FC541843761C00970C58 /* btContactProcessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DB91840A4DD002F0C06 /* btContactProcessing.cpp */; };
+		B087FC551843761C00970C58 /* Isgl3dGLTextureFactoryState2.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736171840A0EF002F0C06 /* Isgl3dGLTextureFactoryState2.m */; };
+		B087FC561843761C00970C58 /* btConcaveShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D791840A4DD002F0C06 /* btConcaveShape.cpp */; };
+		B087FC571843761C00970C58 /* ShallowWaterAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0F73F011842464E002F0C06 /* ShallowWaterAppDelegate.mm */; };
+		B087FC581843761C00970C58 /* btBoxBoxDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D411840A4DD002F0C06 /* btBoxBoxDetector.cpp */; };
+		B087FC591843761C00970C58 /* Isgl3dEvent3DListener.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7362A1840A0EF002F0C06 /* Isgl3dEvent3DListener.m */; };
+		B087FC5A1843761C00970C58 /* Isgl3dGLUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736FC1840A0F0002F0C06 /* Isgl3dGLUILabel.m */; };
+		B087FC5B1843761C00970C58 /* Isgl3dParticleSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7368C1840A0EF002F0C06 /* Isgl3dParticleSystem.m */; };
+		B087FC5C1843761C00970C58 /* Isgl3dUShortArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F737101840A0F0002F0C06 /* Isgl3dUShortArray.m */; };
+		B087FC5D1843761C00970C58 /* btSerializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E451840A4DD002F0C06 /* btSerializer.cpp */; };
+		B087FC5E1843761C00970C58 /* btOverlappingPairCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D331840A4DD002F0C06 /* btOverlappingPairCache.cpp */; };
+		B087FC5F1843761C00970C58 /* Isgl3dPrimitive.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736AE1840A0EF002F0C06 /* Isgl3dPrimitive.m */; };
+		B087FC601843761C00970C58 /* PVRTVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F7376D1840A0F0002F0C06 /* PVRTVector.cpp */; };
+		B087FC611843761C00970C58 /* btContactConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E021840A4DD002F0C06 /* btContactConstraint.cpp */; };
+		B087FC621843761C00970C58 /* Isgl3dCylinder.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7369C1840A0EF002F0C06 /* Isgl3dCylinder.m */; };
+		B087FC631843761C00970C58 /* Isgl3dPhysicsWorld.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EC41840A540002F0C06 /* Isgl3dPhysicsWorld.mm */; };
+		B087FC641843761C00970C58 /* Isgl3dCaptureShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736D01840A0EF002F0C06 /* Isgl3dCaptureShader.m */; };
+		B087FC651843761C00970C58 /* btStridingMeshInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DA21840A4DD002F0C06 /* btStridingMeshInterface.cpp */; };
+		B087FC661843761C00970C58 /* btCapsuleShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D721840A4DD002F0C06 /* btCapsuleShape.cpp */; };
+		B087FC671843761C00970C58 /* Isgl3dActionScale.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7359E1840A0EE002F0C06 /* Isgl3dActionScale.m */; };
+		B087FC681843761C00970C58 /* PVRTFixedPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737391840A0F0002F0C06 /* PVRTFixedPoint.cpp */; };
+		B087FC691843761C00970C58 /* Isgl3dGLTextureFactoryState1.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7360A1840A0EF002F0C06 /* Isgl3dGLTextureFactoryState1.m */; };
+		B087FC6A1843761C00970C58 /* Isgl3dGLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735E11840A0EF002F0C06 /* Isgl3dGLContext.m */; };
+		B087FC6B1843761C00970C58 /* PVRTTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737641840A0F0002F0C06 /* PVRTTexture.cpp */; };
+		B087FC6C1843761C00970C58 /* Isgl3dActionRepeat.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735981840A0EE002F0C06 /* Isgl3dActionRepeat.m */; };
+		B087FC6D1843761C00970C58 /* Isgl3dUVMap.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736001840A0EF002F0C06 /* Isgl3dUVMap.m */; };
+		B087FC6E1843761C00970C58 /* Isgl3dEvent3D.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736211840A0EF002F0C06 /* Isgl3dEvent3D.m */; };
+		B087FC6F1843761C00970C58 /* btCollisionObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D471840A4DD002F0C06 /* btCollisionObject.cpp */; };
+		B087FC701843761C00970C58 /* PVRTTriStrip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F7376A1840A0F0002F0C06 /* PVRTTriStrip.cpp */; };
+		B087FC711843761C00970C58 /* Isgl3dParticleShader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736DF1840A0EF002F0C06 /* Isgl3dParticleShader.m */; };
+		B087FC721843761C00970C58 /* Isgl3dParticleGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736831840A0EF002F0C06 /* Isgl3dParticleGenerator.m */; };
+		B087FC731843761C00970C58 /* btConvexHullShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D7F1840A4DD002F0C06 /* btConvexHullShape.cpp */; };
+		B087FC741843761C00970C58 /* PVRTShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737291840A0F0002F0C06 /* PVRTShader.cpp */; };
+		B087FC751843761C00970C58 /* Isgl3dGLRenderer1.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736C21840A0EF002F0C06 /* Isgl3dGLRenderer1.m */; };
+		B087FC761843761C00970C58 /* btGjkEpa2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DE61840A4DD002F0C06 /* btGjkEpa2.cpp */; };
+		B087FC771843761C00970C58 /* Isgl3dVector.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736681840A0EF002F0C06 /* Isgl3dVector.m */; };
+		B087FC781843761C00970C58 /* Isgl3dActionDelay.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735801840A0EE002F0C06 /* Isgl3dActionDelay.m */; };
+		B087FC791843761C00970C58 /* Isgl3dExplosionParticleGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7367A1840A0EF002F0C06 /* Isgl3dExplosionParticleGenerator.m */; };
+		B087FC7A1843761C00970C58 /* btMultimaterialTriangleMeshShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D921840A4DD002F0C06 /* btMultimaterialTriangleMeshShape.cpp */; };
+		B087FC7B1843761C00970C58 /* gim_contact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DD11840A4DD002F0C06 /* gim_contact.cpp */; };
+		B087FC7C1843761C00970C58 /* btOptimizedBvh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D961840A4DD002F0C06 /* btOptimizedBvh.cpp */; };
+		B087FC7D1843761C00970C58 /* Isgl3dGLContext2.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736111840A0EF002F0C06 /* Isgl3dGLContext2.m */; };
+		B087FC7E1843761C00970C58 /* PVRTPFXParserAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737211840A0F0002F0C06 /* PVRTPFXParserAPI.cpp */; };
+		B087FC7F1843761C00970C58 /* btBoxShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D6E1840A4DD002F0C06 /* btBoxShape.cpp */; };
+		B087FC801843761C00970C58 /* Isgl3dTouchedObject3D.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736341840A0EF002F0C06 /* Isgl3dTouchedObject3D.m */; };
+		B087FC811843761C00970C58 /* btHinge2Constraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E091840A4DD002F0C06 /* btHinge2Constraint.cpp */; };
+		B087FC821843761C00970C58 /* Isgl3dMotionState.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EC01840A540002F0C06 /* Isgl3dMotionState.mm */; };
+		B087FC831843761C00970C58 /* btTypedConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E181840A4DD002F0C06 /* btTypedConstraint.cpp */; };
+		B087FC841843761C00970C58 /* Isgl3dGLVBOFactory2.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7361A1840A0EF002F0C06 /* Isgl3dGLVBOFactory2.m */; };
+		B087FC851843761C00970C58 /* Isgl3dView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F737141840A0F0002F0C06 /* Isgl3dView.m */; };
+		B087FC871843761C00970C58 /* btMinkowskiPenetrationDepthSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DED1840A4DD002F0C06 /* btMinkowskiPenetrationDepthSolver.cpp */; };
+		B087FC881843761C00970C58 /* PVRTGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F7373C1840A0F0002F0C06 /* PVRTGeometry.cpp */; };
+		B087FC891843761C00970C58 /* btSliderConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E121840A4DD002F0C06 /* btSliderConstraint.cpp */; };
+		B087FC8A1843761C00970C58 /* btTriangleBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DA61840A4DD002F0C06 /* btTriangleBuffer.cpp */; };
+		B087FC8B1843761C00970C58 /* btAxisSweep3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D241840A4DD002F0C06 /* btAxisSweep3.cpp */; };
+		B087FC8C1843761C00970C58 /* Isgl3dGLTextureFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735ED1840A0EF002F0C06 /* Isgl3dGLTextureFactory.m */; };
+		B087FC8D1843761C00970C58 /* btConvexPlaneCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D531840A4DD002F0C06 /* btConvexPlaneCollisionAlgorithm.cpp */; };
+		B087FC8E1843761C00970C58 /* btGeneric6DofSpringConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E071840A4DD002F0C06 /* btGeneric6DofSpringConstraint.cpp */; };
+		B087FC8F1843761C00970C58 /* Isgl3dEvent3DDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736241840A0EF002F0C06 /* Isgl3dEvent3DDispatcher.m */; };
+		B087FC901843761C00970C58 /* Isgl3dGLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736BE1840A0EF002F0C06 /* Isgl3dGLRenderer.m */; };
+		B087FC911843761C00970C58 /* Isgl3dActionInstant.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735891840A0EE002F0C06 /* Isgl3dActionInstant.m */; };
+		B087FC921843761C00970C58 /* btDbvt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D2B1840A4DD002F0C06 /* btDbvt.cpp */; };
+		B087FC931843761C00970C58 /* Isgl3dFountainBounceParticleGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7367D1840A0EF002F0C06 /* Isgl3dFountainBounceParticleGenerator.m */; };
+		B087FC941843761C00970C58 /* Isgl3dCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735BB1840A0EE002F0C06 /* Isgl3dCamera.m */; };
+		B087FC951843761C00970C58 /* PVRTModelPOD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F7374A1840A0F0002F0C06 /* PVRTModelPOD.cpp */; };
+		B087FC961843761C00970C58 /* btInternalEdgeUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D5B1840A4DD002F0C06 /* btInternalEdgeUtility.cpp */; };
+		B087FC971843761C00970C58 /* btScaledBvhTriangleMeshShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D9A1840A4DD002F0C06 /* btScaledBvhTriangleMeshShape.cpp */; };
+		B087FC981843761C00970C58 /* Isgl3dActionRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7359B1840A0EE002F0C06 /* Isgl3dActionRotate.m */; };
+		B087FC991843761C00970C58 /* btRaycastVehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E291840A4DD002F0C06 /* btRaycastVehicle.cpp */; };
+		B087FC9A1843761C00970C58 /* Isgl3dEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735DB1840A0EF002F0C06 /* Isgl3dEAGLView.m */; };
+		B087FC9B1843761C00970C58 /* btContinuousConvexCollision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DDE1840A4DD002F0C06 /* btContinuousConvexCollision.cpp */; };
+		B087FC9C1843761C00970C58 /* Isgl3dGLUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736F31840A0F0002F0C06 /* Isgl3dGLUIButton.m */; };
+		B087FC9D1843761C00970C58 /* Isgl3dActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7358F1840A0EE002F0C06 /* Isgl3dActionManager.m */; };
+		B087FC9E1843761C00970C58 /* btConvexConcaveCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D4F1840A4DD002F0C06 /* btConvexConcaveCollisionAlgorithm.cpp */; };
+		B087FC9F1843761C00970C58 /* Isgl3dPODImporter.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0F736401840A0EF002F0C06 /* Isgl3dPODImporter.mm */; };
+		B087FCA01843761C00970C58 /* btGImpactShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DC51840A4DD002F0C06 /* btGImpactShape.cpp */; };
+		B087FCA11843761C00970C58 /* Isgl3dTorus.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736BA1840A0EF002F0C06 /* Isgl3dTorus.m */; };
+		B087FCA21843761C00970C58 /* Isgl3dGLVBOFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735F61840A0EF002F0C06 /* Isgl3dGLVBOFactory.m */; };
+		B087FCA31843761C00970C58 /* Isgl3dActionCallFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7357D1840A0EE002F0C06 /* Isgl3dActionCallFunc.m */; };
+		B087FCA41843761C00970C58 /* Isgl3dGLDepthRenderTexture1.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736071840A0EF002F0C06 /* Isgl3dGLDepthRenderTexture1.m */; };
+		B087FCA51843761C00970C58 /* btActivatingCollisionAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D3B1840A4DD002F0C06 /* btActivatingCollisionAlgorithm.cpp */; };
+		B087FCA61843761C00970C58 /* Isgl3dLight.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736481840A0EF002F0C06 /* Isgl3dLight.m */; };
+		B087FCA71843761C00970C58 /* Isgl3dGLUIProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736FF1840A0F0002F0C06 /* Isgl3dGLUIProgressBar.m */; };
+		B087FCA81843761C00970C58 /* Isgl3dArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F736901840A0EF002F0C06 /* Isgl3dArrow.m */; };
+		B087FCA91843761C00970C58 /* Isgl3dDemoCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F73EFC1842464E002F0C06 /* Isgl3dDemoCameraController.m */; };
+		B087FCAA1843761C00970C58 /* Isgl3dActionParallel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735951840A0EE002F0C06 /* Isgl3dActionParallel.m */; };
+		B087FCAB1843761C00970C58 /* Isgl3dActionFixedDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735861840A0EE002F0C06 /* Isgl3dActionFixedDuration.m */; };
+		B087FCAC1843761C00970C58 /* btSubSimplexConvexCast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DF51840A4DD002F0C06 /* btSubSimplexConvexCast.cpp */; };
+		B087FCAD1843761C00970C58 /* Isgl3dGLVBOData.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735F31840A0EF002F0C06 /* Isgl3dGLVBOData.m */; };
+		B087FCAE1843761C00970C58 /* btUniversalConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E1A1840A4DD002F0C06 /* btUniversalConstraint.cpp */; };
+		B087FCAF1843761C00970C58 /* btPolyhedralConvexShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D981840A4DD002F0C06 /* btPolyhedralConvexShape.cpp */; };
+		B087FCB01843761C00970C58 /* Isgl3dNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735CE1840A0EE002F0C06 /* Isgl3dNode.m */; };
+		B087FCB11843761C00970C58 /* PVRTString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F737611840A0F0002F0C06 /* PVRTString.cpp */; };
+		B087FCB21843761C00970C58 /* Isgl3dAction.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F735771840A0EE002F0C06 /* Isgl3dAction.m */; };
+		B087FCB31843761C00970C58 /* btRigidBody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73E231840A4DD002F0C06 /* btRigidBody.cpp */; };
+		B087FCB41843761C00970C58 /* btGImpactQuantizedBvh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DC31840A4DD002F0C06 /* btGImpactQuantizedBvh.cpp */; };
+		B087FCB51843761C00970C58 /* btQuantizedBvh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D361840A4DD002F0C06 /* btQuantizedBvh.cpp */; };
+		B087FCB61843761C00970C58 /* btTriangleMeshShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DB11840A4DD002F0C06 /* btTriangleMeshShape.cpp */; };
+		B087FCB71843761C00970C58 /* btRaycastCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73DF21840A4DD002F0C06 /* btRaycastCallback.cpp */; };
+		B087FCB81843761C00970C58 /* btMinkowskiSumShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D901840A4DD002F0C06 /* btMinkowskiSumShape.cpp */; };
+		B087FCB91843761C00970C58 /* btCollisionWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0F73D491840A4DD002F0C06 /* btCollisionWorld.cpp */; };
+		B087FCBB1843761C00970C58 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F73ED818422DBE002F0C06 /* GLKit.framework */; };
+		B087FCBC1843761C00970C58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F735531840A0EE002F0C06 /* Foundation.framework */; };
+		B087FCBD1843761C00970C58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354F1840A0EE002F0C06 /* CoreGraphics.framework */; };
+		B087FCBE1843761C00970C58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F735511840A0EE002F0C06 /* UIKit.framework */; };
+		B087FCBF1843761C00970C58 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354B1840A0EE002F0C06 /* QuartzCore.framework */; };
+		B087FCC01843761C00970C58 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354D1840A0EE002F0C06 /* OpenGLES.framework */; };
+		B087FCC21843761C00970C58 /* LICENSE.IMGTEC in Resources */ = {isa = PBXBuildFile; fileRef = B0F735711840A0EE002F0C06 /* LICENSE.IMGTEC */; };
+		B087FCC31843761C00970C58 /* shadowMap.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B0F735661840A0EE002F0C06 /* shadowMap.vsh */; };
+		B087FCC41843761C00970C58 /* wall0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B087FB9D1843496400970C58 /* wall0.jpg */; };
+		B087FCC51843761C00970C58 /* wall2.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F73ECE1840A87E002F0C06 /* wall2.png */; };
+		B087FCC61843761C00970C58 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F735691840A0EE002F0C06 /* Default.png */; };
+		B087FCC71843761C00970C58 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7356B1840A0EE002F0C06 /* Icon.png */; };
+		B087FCC81843761C00970C58 /* capture.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B0F7355A1840A0EE002F0C06 /* capture.vsh */; };
+		B087FCC91843761C00970C58 /* water05.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F73ECF1840A87E002F0C06 /* water05.png */; };
+		B087FCCA1843761C00970C58 /* capture.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B0F735581840A0EE002F0C06 /* capture.fsh */; };
+		B087FCCB1843761C00970C58 /* README in Resources */ = {isa = PBXBuildFile; fileRef = B0F73EC51840A540002F0C06 /* README */; };
+		B087FCCC1843761C00970C58 /* LICENSE.isgl3d in Resources */ = {isa = PBXBuildFile; fileRef = B0F7356F1840A0EE002F0C06 /* LICENSE.isgl3d */; };
+		B087FCCD1843761C00970C58 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F7356D1840A0EE002F0C06 /* Icon@2x.png */; };
+		B087FCCE1843761C00970C58 /* particle.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B0F735601840A0EE002F0C06 /* particle.fsh */; };
+		B087FCCF1843761C00970C58 /* particle.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B0F735621840A0EE002F0C06 /* particle.vsh */; };
+		B087FCD01843761C00970C58 /* wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B087FB9B1843491600970C58 /* wall.jpg */; };
+		B087FCD11843761C00970C58 /* shadowMap.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B0F735641840A0EE002F0C06 /* shadowMap.fsh */; };
+		B087FCD21843761C00970C58 /* generic.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B0F7355C1840A0EE002F0C06 /* generic.fsh */; };
+		B087FCD31843761C00970C58 /* generic.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B0F7355E1840A0EE002F0C06 /* generic.vsh */; };
+		B087FCDF184377CA00970C58 /* BreakingWave.plist in Resources */ = {isa = PBXBuildFile; fileRef = B087FCDA184377CA00970C58 /* BreakingWave.plist */; };
+		B0B661BB184378CE001E7373 /* WaterMeshBreakingWave.mm in Sources */ = {isa = PBXBuildFile; fileRef = B087FCDE184377CA00970C58 /* WaterMeshBreakingWave.mm */; };
+		B0D17141184391A300D9B075 /* particle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0D17140184391A300D9B075 /* particle.jpg */; };
+		B0D17142184393E000D9B075 /* particle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0D17140184391A300D9B075 /* particle.jpg */; };
 		B0F7354C1840A0EE002F0C06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354B1840A0EE002F0C06 /* QuartzCore.framework */; };
 		B0F7354E1840A0EE002F0C06 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354D1840A0EE002F0C06 /* OpenGLES.framework */; };
 		B0F735501840A0EE002F0C06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354F1840A0EE002F0C06 /* CoreGraphics.framework */; };
@@ -611,14 +916,23 @@
 		B0F7403518433060002F0C06 /* generic.vsh in Resources */ = {isa = PBXBuildFile; fileRef = B0F7355E1840A0EE002F0C06 /* generic.vsh */; };
 		B0F7404318433376002F0C06 /* MortalParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7404018433376002F0C06 /* MortalParticle.m */; };
 		B0F7404418433376002F0C06 /* WaterTerrain.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F7404218433376002F0C06 /* WaterTerrain.m */; };
-		B0F740481843348C002F0C06 /* DripingDemo.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0F74045184333DF002F0C06 /* DripingDemo.mm */; };
+		B0F740481843348C002F0C06 /* DrippingDemo.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0F74045184333DF002F0C06 /* DrippingDemo.mm */; };
+		B0FF603518437B2B00A0E25C /* BreakingWaveDemo.mm in Sources */ = {isa = PBXBuildFile; fileRef = B087FCDC184377CA00970C58 /* BreakingWaveDemo.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B04926A2184396C30091843D /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = particle.png; path = Resources/particle.png; sourceTree = "<group>"; };
 		B087FB971843395100970C58 /* WaterMeshDripping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaterMeshDripping.h; path = ShallowWater/DrippingDemo/WaterMeshDripping.h; sourceTree = "<group>"; };
 		B087FB981843395100970C58 /* WaterMeshDripping.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = WaterMeshDripping.mm; path = ShallowWater/DrippingDemo/WaterMeshDripping.mm; sourceTree = "<group>"; };
 		B087FB9B1843491600970C58 /* wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wall.jpg; path = Resources/wall.jpg; sourceTree = "<group>"; };
 		B087FB9D1843496400970C58 /* wall0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wall0.jpg; path = Resources/wall0.jpg; sourceTree = "<group>"; };
+		B087FCD71843761C00970C58 /* BreakingWave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingWave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B087FCDA184377CA00970C58 /* BreakingWave.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BreakingWave.plist; path = ShallowWater/BreakingWaveDemo/BreakingWave.plist; sourceTree = "<group>"; };
+		B087FCDB184377CA00970C58 /* BreakingWaveDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BreakingWaveDemo.h; path = ShallowWater/BreakingWaveDemo/BreakingWaveDemo.h; sourceTree = "<group>"; };
+		B087FCDC184377CA00970C58 /* BreakingWaveDemo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BreakingWaveDemo.mm; path = ShallowWater/BreakingWaveDemo/BreakingWaveDemo.mm; sourceTree = "<group>"; };
+		B087FCDD184377CA00970C58 /* WaterMeshBreakingWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaterMeshBreakingWave.h; path = ShallowWater/BreakingWaveDemo/WaterMeshBreakingWave.h; sourceTree = "<group>"; };
+		B087FCDE184377CA00970C58 /* WaterMeshBreakingWave.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = WaterMeshBreakingWave.mm; path = ShallowWater/BreakingWaveDemo/WaterMeshBreakingWave.mm; sourceTree = "<group>"; };
+		B0D17140184391A300D9B075 /* particle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = particle.jpg; path = Resources/particle.jpg; sourceTree = "<group>"; };
 		B0F735481840A0EE002F0C06 /* ShallowWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShallowWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F7354B1840A0EE002F0C06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B0F7354D1840A0EE002F0C06 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1273,11 +1587,24 @@
 		B0F7404018433376002F0C06 /* MortalParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MortalParticle.m; path = DemoCommon/MortalParticle.m; sourceTree = "<group>"; };
 		B0F7404118433376002F0C06 /* WaterTerrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaterTerrain.h; path = DemoCommon/WaterTerrain.h; sourceTree = "<group>"; };
 		B0F7404218433376002F0C06 /* WaterTerrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WaterTerrain.m; path = DemoCommon/WaterTerrain.m; sourceTree = "<group>"; };
-		B0F74045184333DF002F0C06 /* DripingDemo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DripingDemo.mm; path = ShallowWater/DrippingDemo/DripingDemo.mm; sourceTree = "<group>"; };
+		B0F74045184333DF002F0C06 /* DrippingDemo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DrippingDemo.mm; path = ShallowWater/DrippingDemo/DrippingDemo.mm; sourceTree = "<group>"; };
 		B0F74046184333DF002F0C06 /* DrippingDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrippingDemo.h; path = ShallowWater/DrippingDemo/DrippingDemo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B087FCBA1843761C00970C58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B087FCBB1843761C00970C58 /* GLKit.framework in Frameworks */,
+				B087FCBC1843761C00970C58 /* Foundation.framework in Frameworks */,
+				B087FCBD1843761C00970C58 /* CoreGraphics.framework in Frameworks */,
+				B087FCBE1843761C00970C58 /* UIKit.framework in Frameworks */,
+				B087FCBF1843761C00970C58 /* QuartzCore.framework in Frameworks */,
+				B087FCC01843761C00970C58 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0F735451840A0EE002F0C06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1307,9 +1634,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B087FCD91843773100970C58 /* BreakingWaveDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B087FCDA184377CA00970C58 /* BreakingWave.plist */,
+				B087FCDB184377CA00970C58 /* BreakingWaveDemo.h */,
+				B087FCDC184377CA00970C58 /* BreakingWaveDemo.mm */,
+				B087FCDD184377CA00970C58 /* WaterMeshBreakingWave.h */,
+				B087FCDE184377CA00970C58 /* WaterMeshBreakingWave.mm */,
+			);
+			name = BreakingWaveDemo;
+			sourceTree = "<group>";
+		};
 		B0F7353F1840A0EE002F0C06 = {
 			isa = PBXGroup;
 			children = (
+				B087FCD91843773100970C58 /* BreakingWaveDemo */,
 				B0F7403E184331DA002F0C06 /* DrippingDemo */,
 				B0F73EEB18423558002F0C06 /* DemoTemplate */,
 				B0F735551840A0EE002F0C06 /* ShallowWater */,
@@ -1325,6 +1665,7 @@
 			children = (
 				B0F735481840A0EE002F0C06 /* ShallowWater.app */,
 				B0F7403918433060002F0C06 /* Dripping.app */,
+				B087FCD71843761C00970C58 /* BreakingWave.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1357,6 +1698,8 @@
 		B0F735561840A0EE002F0C06 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B04926A2184396C30091843D /* particle.png */,
+				B0D17140184391A300D9B075 /* particle.jpg */,
 				B087FB9D1843496400970C58 /* wall0.jpg */,
 				B087FB9B1843491600970C58 /* wall.jpg */,
 				B0F73ECE1840A87E002F0C06 /* wall2.png */,
@@ -2383,7 +2726,7 @@
 			isa = PBXGroup;
 			children = (
 				B0F74046184333DF002F0C06 /* DrippingDemo.h */,
-				B0F74045184333DF002F0C06 /* DripingDemo.mm */,
+				B0F74045184333DF002F0C06 /* DrippingDemo.mm */,
 				B087FB971843395100970C58 /* WaterMeshDripping.h */,
 				B087FB981843395100970C58 /* WaterMeshDripping.mm */,
 				B0F7403C184331C4002F0C06 /* Dripping.plist */,
@@ -2394,6 +2737,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B087FBA11843761C00970C58 /* BreakingWave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B087FCD41843761C00970C58 /* Build configuration list for PBXNativeTarget "BreakingWave" */;
+			buildPhases = (
+				B087FBA21843761C00970C58 /* Sources */,
+				B087FCBA1843761C00970C58 /* Frameworks */,
+				B087FCC11843761C00970C58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BreakingWave;
+			productName = ShallowWater;
+			productReference = B087FCD71843761C00970C58 /* BreakingWave.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B0F735471840A0EE002F0C06 /* ShallowWater */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0F737821840A0F0002F0C06 /* Build configuration list for PBXNativeTarget "ShallowWater" */;
@@ -2450,11 +2810,39 @@
 			targets = (
 				B0F735471840A0EE002F0C06 /* ShallowWater */,
 				B0F73F0618433060002F0C06 /* Dripping */,
+				B087FBA11843761C00970C58 /* BreakingWave */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B087FCC11843761C00970C58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04926A4184396D60091843D /* particle.png in Resources */,
+				B0D17142184393E000D9B075 /* particle.jpg in Resources */,
+				B087FCC21843761C00970C58 /* LICENSE.IMGTEC in Resources */,
+				B087FCC31843761C00970C58 /* shadowMap.vsh in Resources */,
+				B087FCC41843761C00970C58 /* wall0.jpg in Resources */,
+				B087FCC51843761C00970C58 /* wall2.png in Resources */,
+				B087FCC61843761C00970C58 /* Default.png in Resources */,
+				B087FCC71843761C00970C58 /* Icon.png in Resources */,
+				B087FCC81843761C00970C58 /* capture.vsh in Resources */,
+				B087FCC91843761C00970C58 /* water05.png in Resources */,
+				B087FCCA1843761C00970C58 /* capture.fsh in Resources */,
+				B087FCCB1843761C00970C58 /* README in Resources */,
+				B087FCCC1843761C00970C58 /* LICENSE.isgl3d in Resources */,
+				B087FCCD1843761C00970C58 /* Icon@2x.png in Resources */,
+				B087FCCE1843761C00970C58 /* particle.fsh in Resources */,
+				B087FCCF1843761C00970C58 /* particle.vsh in Resources */,
+				B087FCD01843761C00970C58 /* wall.jpg in Resources */,
+				B087FCD11843761C00970C58 /* shadowMap.fsh in Resources */,
+				B087FCD21843761C00970C58 /* generic.fsh in Resources */,
+				B087FCD31843761C00970C58 /* generic.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0F735461840A0EE002F0C06 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2464,15 +2852,18 @@
 				B087FB9E1843496400970C58 /* wall0.jpg in Resources */,
 				B0F73ED01840A87E002F0C06 /* wall2.png in Resources */,
 				B0F7356A1840A0EE002F0C06 /* Default.png in Resources */,
+				B087FCDF184377CA00970C58 /* BreakingWave.plist in Resources */,
 				B0F7356C1840A0EE002F0C06 /* Icon.png in Resources */,
 				B0F7355B1840A0EE002F0C06 /* capture.vsh in Resources */,
 				B0F73ED11840A87E002F0C06 /* water05.png in Resources */,
 				B0F735591840A0EE002F0C06 /* capture.fsh in Resources */,
 				B0F73EC91840A540002F0C06 /* README in Resources */,
+				B04926A3184396C30091843D /* particle.png in Resources */,
 				B0F735701840A0EE002F0C06 /* LICENSE.isgl3d in Resources */,
 				B0F7356E1840A0EE002F0C06 /* Icon@2x.png in Resources */,
 				B0F735611840A0EE002F0C06 /* particle.fsh in Resources */,
 				B0F735631840A0EE002F0C06 /* particle.vsh in Resources */,
+				B0D17141184391A300D9B075 /* particle.jpg in Resources */,
 				B087FB9C1843491600970C58 /* wall.jpg in Resources */,
 				B0F735651840A0EE002F0C06 /* shadowMap.fsh in Resources */,
 				B0F7355D1840A0EE002F0C06 /* generic.fsh in Resources */,
@@ -2508,6 +2899,291 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B087FBA21843761C00970C58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FF603518437B2B00A0E25C /* BreakingWaveDemo.mm in Sources */,
+				B0B661BB184378CE001E7373 /* WaterMeshBreakingWave.mm in Sources */,
+				B087FBA31843761C00970C58 /* Isgl3dOvoid.m in Sources */,
+				B087FBA41843761C00970C58 /* btSphereBoxCollisionAlgorithm.cpp in Sources */,
+				B087FBA51843761C00970C58 /* btAlignedAllocator.cpp in Sources */,
+				B087FBA61843761C00970C58 /* btGeometryUtil.cpp in Sources */,
+				B087FBA71843761C00970C58 /* PVRTgles2Ext.cpp in Sources */,
+				B087FBA81843761C00970C58 /* Isgl3dTextureMaterial.m in Sources */,
+				B087FBA91843761C00970C58 /* Isgl3dFloatArray.m in Sources */,
+				B087FBAA1843761C00970C58 /* btDiscreteDynamicsWorld.cpp in Sources */,
+				B087FBAB1843761C00970C58 /* btSimpleDynamicsWorld.cpp in Sources */,
+				B087FBAC1843761C00970C58 /* btTriangleMesh.cpp in Sources */,
+				B087FBAD1843761C00970C58 /* Isgl3dViewController.m in Sources */,
+				B087FBAF1843761C00970C58 /* btTriangleShapeEx.cpp in Sources */,
+				B087FBB01843761C00970C58 /* Isgl3dFollowNode.m in Sources */,
+				B087FBB11843761C00970C58 /* Isgl3dParticlePath.m in Sources */,
+				B087FBB21843761C00970C58 /* btSphereTriangleCollisionAlgorithm.cpp in Sources */,
+				B087FBB31843761C00970C58 /* btEmptyCollisionAlgorithm.cpp in Sources */,
+				B087FBB41843761C00970C58 /* Isgl3dScheduler.m in Sources */,
+				B087FBB51843761C00970C58 /* Isgl3dGLRenderer1State.m in Sources */,
+				B087FBB61843761C00970C58 /* gim_box_set.cpp in Sources */,
+				B087FBB71843761C00970C58 /* btConvexHull.cpp in Sources */,
+				B087FBB81843761C00970C58 /* btGeneric6DofConstraint.cpp in Sources */,
+				B087FBB91843761C00970C58 /* Isgl3dPhysicsObject3D.mm in Sources */,
+				B087FBBA1843761C00970C58 /* PVRTBoneBatch.cpp in Sources */,
+				B087FBBB1843761C00970C58 /* Isgl3dParticleNode.m in Sources */,
+				B087FBBC1843761C00970C58 /* Isgl3dBoneBatch.m in Sources */,
+				B087FBBD1843761C00970C58 /* Isgl3dGLParticle.m in Sources */,
+				B087FBBE1843761C00970C58 /* btGImpactBvh.cpp in Sources */,
+				B087FBBF1843761C00970C58 /* Isgl3dGLDepthRenderTexture2.m in Sources */,
+				B087FBC01843761C00970C58 /* Isgl3dFollowCamera.m in Sources */,
+				B087FBC11843761C00970C58 /* PVRTMisc.cpp in Sources */,
+				B087FBC21843761C00970C58 /* Isgl3dFpsRenderer.m in Sources */,
+				B087FBC31843761C00970C58 /* Isgl3dGLContext1.m in Sources */,
+				B087FBC41843761C00970C58 /* Isgl3dQuaternion.m in Sources */,
+				B087FBC51843761C00970C58 /* PVRTMatrixX.cpp in Sources */,
+				B087FBC61843761C00970C58 /* btBroadphaseProxy.cpp in Sources */,
+				B087FBC71843761C00970C58 /* btBvhTriangleMeshShape.cpp in Sources */,
+				B087FBC81843761C00970C58 /* Isgl3dTerrainMesh.m in Sources */,
+				B087FBC91843761C00970C58 /* btGjkPairDetector.cpp in Sources */,
+				B087FBCB1843761C00970C58 /* Isgl3dPVRLoader.mm in Sources */,
+				B087FBCC1843761C00970C58 /* PVRTDecompress.cpp in Sources */,
+				B087FBCD1843761C00970C58 /* Isgl3dAccelerometer.m in Sources */,
+				B087FBCE1843761C00970C58 /* Isgl3dGLRenderer2State.m in Sources */,
+				B087FBCF1843761C00970C58 /* btCylinderShape.cpp in Sources */,
+				B087FBD01843761C00970C58 /* btUniformScalingShape.cpp in Sources */,
+				B087FBD11843761C00970C58 /* Isgl3dCustomShader.m in Sources */,
+				B087FBD21843761C00970C58 /* Isgl3dGLVBOFactory1.m in Sources */,
+				B087FBD31843761C00970C58 /* btConvexInternalShape.cpp in Sources */,
+				B087FBD41843761C00970C58 /* btStaticPlaneShape.cpp in Sources */,
+				B087FBD51843761C00970C58 /* btSimpleBroadphase.cpp in Sources */,
+				B087FBD61843761C00970C58 /* Isgl3dActionSequence.m in Sources */,
+				B087FBD71843761C00970C58 /* Isgl3dScene3D.m in Sources */,
+				B087FBD81843761C00970C58 /* SphereTriangleDetector.cpp in Sources */,
+				B087FBD91843761C00970C58 /* btTriangleIndexVertexMaterialArray.cpp in Sources */,
+				B087FBDA1843761C00970C58 /* Isgl3dCone.m in Sources */,
+				B087FBDB1843761C00970C58 /* Isgl3dBillboardNode.m in Sources */,
+				B087FBDC1843761C00970C58 /* btGImpactCollisionAlgorithm.cpp in Sources */,
+				B087FBDD1843761C00970C58 /* btSequentialImpulseConstraintSolver.cpp in Sources */,
+				B087FBDE1843761C00970C58 /* Isgl3dFountainParticleGenerator.m in Sources */,
+				B087FBDF1843761C00970C58 /* btSimulationIslandManager.cpp in Sources */,
+				B087FBE01843761C00970C58 /* btSphereShape.cpp in Sources */,
+				B087FBE11843761C00970C58 /* btConvex2dShape.cpp in Sources */,
+				B087FBE21843761C00970C58 /* btConvexShape.cpp in Sources */,
+				B087FBE31843761C00970C58 /* btGjkEpaPenetrationDepthSolver.cpp in Sources */,
+				B087FBE41843761C00970C58 /* btShapeHull.cpp in Sources */,
+				B087FBE51843761C00970C58 /* Isgl3dSphere.m in Sources */,
+				B087FBE61843761C00970C58 /* Isgl3dPrimitiveFactory.m in Sources */,
+				B087FBE71843761C00970C58 /* btSphereSphereCollisionAlgorithm.cpp in Sources */,
+				B087FBE81843761C00970C58 /* Isgl3dShadowMapShader.m in Sources */,
+				B087FBE91843761C00970C58 /* btMultiSphereShape.cpp in Sources */,
+				B087FBEA1843761C00970C58 /* btTriangleIndexVertexArray.cpp in Sources */,
+				B087FBEB1843761C00970C58 /* btDbvtBroadphase.cpp in Sources */,
+				B087FBEC1843761C00970C58 /* Isgl3dActionMove.m in Sources */,
+				B087FBED1843761C00970C58 /* btSolve2LinearConstraint.cpp in Sources */,
+				B087FBEE1843761C00970C58 /* Isgl3dArray.m in Sources */,
+				B087FBEF1843761C00970C58 /* Isgl3dTouchScreen.m in Sources */,
+				B087FBF01843761C00970C58 /* Isgl3dTweener.m in Sources */,
+				B087FBF11843761C00970C58 /* btConvexPointCloudShape.cpp in Sources */,
+				B087FBF21843761C00970C58 /* btBox2dBox2dCollisionAlgorithm.cpp in Sources */,
+				B087FBF31843761C00970C58 /* isgl3d.m in Sources */,
+				B087FBF41843761C00970C58 /* Isgl3dObject3DGrabber.m in Sources */,
+				B087FBF51843761C00970C58 /* btConvexTriangleMeshShape.cpp in Sources */,
+				B087FBF61843761C00970C58 /* Isgl3dTween.m in Sources */,
+				B087FBF71843761C00970C58 /* Isgl3dInternalShader.m in Sources */,
+				B087FBF81843761C00970C58 /* btBox2dShape.cpp in Sources */,
+				B087FBF91843761C00970C58 /* Isgl3dShadowCastingLight.m in Sources */,
+				B087FBFA1843761C00970C58 /* btConvex2dConvex2dAlgorithm.cpp in Sources */,
+				B087FBFB1843761C00970C58 /* btMultiSapBroadphase.cpp in Sources */,
+				B087FBFC1843761C00970C58 /* Isgl3dColorUtil.m in Sources */,
+				B087FBFD1843761C00970C58 /* btConeShape.cpp in Sources */,
+				B087FBFE1843761C00970C58 /* Isgl3dAnimationController.m in Sources */,
+				B087FBFF1843761C00970C58 /* btUnionFind.cpp in Sources */,
+				B087FC001843761C00970C58 /* Isgl3dGLTexture.m in Sources */,
+				B087FC011843761C00970C58 /* PVRTQuaternionF.cpp in Sources */,
+				B087FC021843761C00970C58 /* btManifoldResult.cpp in Sources */,
+				B087FC031843761C00970C58 /* gim_tri_collision.cpp in Sources */,
+				B087FC041843761C00970C58 /* Isgl3dPlane.m in Sources */,
+				B087FC051843761C00970C58 /* Bullet-C-API.cpp in Sources */,
+				B087FC061843761C00970C58 /* btPersistentManifold.cpp in Sources */,
+				B087FC071843761C00970C58 /* btContinuousDynamicsWorld.cpp in Sources */,
+				B087FC081843761C00970C58 /* Isgl3dMultiMaterialCube.m in Sources */,
+				B087FC091843761C00970C58 /* btConeTwistConstraint.cpp in Sources */,
+				B087FC0A1843761C00970C58 /* Isgl3dActionEase.m in Sources */,
+				B087FC0B1843761C00970C58 /* btCollisionDispatcher.cpp in Sources */,
+				B087FC0C1843761C00970C58 /* Isgl3dGLProgram.m in Sources */,
+				B087FC0D1843761C00970C58 /* Isgl3dColorMaterial.m in Sources */,
+				B087FC0E1843761C00970C58 /* Isgl3dGoursatSurface.m in Sources */,
+				B087FC0F1843761C00970C58 /* Isgl3dCube.m in Sources */,
+				B087FC101843761C00970C58 /* Isgl3dMeshNode.m in Sources */,
+				B087FC111843761C00970C58 /* btDispatcher.cpp in Sources */,
+				B087FC121843761C00970C58 /* PVRTTextureAPI.cpp in Sources */,
+				B087FC131843761C00970C58 /* gim_memory.cpp in Sources */,
+				B087FC141843761C00970C58 /* PVRTPFXParser.cpp in Sources */,
+				B087FC151843761C00970C58 /* Isgl3dGLU.m in Sources */,
+				B087FC161843761C00970C58 /* Isgl3dEvent3DHandler.m in Sources */,
+				B087FC171843761C00970C58 /* Isgl3dActionAlpha.m in Sources */,
+				B087FC181843761C00970C58 /* btEmptyShape.cpp in Sources */,
+				B087FC191843761C00970C58 /* Isgl3dMaterial.m in Sources */,
+				B087FC1A1843761C00970C58 /* btHingeConstraint.cpp in Sources */,
+				B087FC1B1843761C00970C58 /* Isgl3dLog.m in Sources */,
+				B087FC1C1843761C00970C58 /* Isgl3dShader.m in Sources */,
+				B087FC1D1843761C00970C58 /* btGjkConvexCast.cpp in Sources */,
+				B087FC1E1843761C00970C58 /* Isgl3dGLUIImage.m in Sources */,
+				B087FC1F1843761C00970C58 /* PVRTPrint3D.cpp in Sources */,
+				B087FC201843761C00970C58 /* btConvexConvexAlgorithm.cpp in Sources */,
+				B087FC211843761C00970C58 /* btWheelInfo.cpp in Sources */,
+				B087FC221843761C00970C58 /* Isgl3dSingleTouchFilter.m in Sources */,
+				B087FC231843761C00970C58 /* PVRTError.cpp in Sources */,
+				B087FC241843761C00970C58 /* btCollisionAlgorithm.cpp in Sources */,
+				B087FC251843761C00970C58 /* PVRTPrint3DAPI.cpp in Sources */,
+				B087FC261843761C00970C58 /* btPoint2PointConstraint.cpp in Sources */,
+				B087FC271843761C00970C58 /* Isgl3dSkeletonNode.m in Sources */,
+				B087FC281843761C00970C58 /* Isgl3dGenericShader.m in Sources */,
+				B087FC291843761C00970C58 /* Isgl3dGLRenderer2.m in Sources */,
+				B087FC2A1843761C00970C58 /* WaterTerrain.m in Sources */,
+				B087FC2B1843761C00970C58 /* btQuickprof.cpp in Sources */,
+				B087FC2C1843761C00970C58 /* PVRTTrans.cpp in Sources */,
+				B087FC2D1843761C00970C58 /* btTetrahedronShape.cpp in Sources */,
+				B087FC2E1843761C00970C58 /* btCollisionShape.cpp in Sources */,
+				B087FC2F1843761C00970C58 /* Isgl3dAnimatedTextureMaterial.m in Sources */,
+				B087FC301843761C00970C58 /* Isgl3dGLDepthRenderTexture.m in Sources */,
+				B087FC311843761C00970C58 /* Isgl3dGestureManager.m in Sources */,
+				B087FC321843761C00970C58 /* PVRTResourceFile.cpp in Sources */,
+				B087FC331843761C00970C58 /* Isgl3dEllipsoid.m in Sources */,
+				B087FC341843761C00970C58 /* Isgl3dDirector.m in Sources */,
+				B087FC351843761C00970C58 /* Isgl3dActionInterval.m in Sources */,
+				B087FC361843761C00970C58 /* btGhostObject.cpp in Sources */,
+				B087FC371843761C00970C58 /* Isgl3dBoneNode.m in Sources */,
+				B087FC381843761C00970C58 /* btHeightfieldTerrainShape.cpp in Sources */,
+				B087FC391843761C00970C58 /* Isgl3dGLTextureFactoryState.m in Sources */,
+				B087FC3A1843761C00970C58 /* btVoronoiSimplexSolver.cpp in Sources */,
+				B087FC3B1843761C00970C58 /* btBoxBoxCollisionAlgorithm.cpp in Sources */,
+				B087FC3C1843761C00970C58 /* Isgl3dAnimatedMeshNode.m in Sources */,
+				B087FC3D1843761C00970C58 /* Isgl3dShaderMaterial.m in Sources */,
+				B087FC3E1843761C00970C58 /* PVRTMatrixF.cpp in Sources */,
+				B087FC3F1843761C00970C58 /* Isgl3dMatrix.m in Sources */,
+				B087FC401843761C00970C58 /* Isgl3dSpringCamera.m in Sources */,
+				B087FC411843761C00970C58 /* Isgl3dCubeSphere.m in Sources */,
+				B087FC421843761C00970C58 /* MortalParticle.m in Sources */,
+				B087FC431843761C00970C58 /* Isgl3dShaderState.m in Sources */,
+				B087FC441843761C00970C58 /* btCompoundCollisionAlgorithm.cpp in Sources */,
+				B087FC451843761C00970C58 /* PVRTBackground.cpp in Sources */,
+				B087FC461843761C00970C58 /* PVRTQuaternionX.cpp in Sources */,
+				B087FC471843761C00970C58 /* PVRTVertex.cpp in Sources */,
+				B087FC481843761C00970C58 /* main.m in Sources */,
+				B087FC491843761C00970C58 /* Isgl3dGLUIComponent.m in Sources */,
+				B087FC4A1843761C00970C58 /* Isgl3dKeyframeMesh.m in Sources */,
+				B087FC4B1843761C00970C58 /* btGenericPoolAllocator.cpp in Sources */,
+				B087FC4C1843761C00970C58 /* btKinematicCharacterController.cpp in Sources */,
+				B087FC4D1843761C00970C58 /* btDefaultCollisionConfiguration.cpp in Sources */,
+				B087FC4E1843761C00970C58 /* PVRTShadowVol.cpp in Sources */,
+				B087FC4F1843761C00970C58 /* Isgl3dActionTween.m in Sources */,
+				B087FC501843761C00970C58 /* btTriangleCallback.cpp in Sources */,
+				B087FC511843761C00970C58 /* btCompoundShape.cpp in Sources */,
+				B087FC521843761C00970C58 /* btConvexCast.cpp in Sources */,
+				B087FC531843761C00970C58 /* Isgl3dGLMesh.m in Sources */,
+				B087FC541843761C00970C58 /* btContactProcessing.cpp in Sources */,
+				B087FC551843761C00970C58 /* Isgl3dGLTextureFactoryState2.m in Sources */,
+				B087FC561843761C00970C58 /* btConcaveShape.cpp in Sources */,
+				B087FC571843761C00970C58 /* ShallowWaterAppDelegate.mm in Sources */,
+				B087FC581843761C00970C58 /* btBoxBoxDetector.cpp in Sources */,
+				B087FC591843761C00970C58 /* Isgl3dEvent3DListener.m in Sources */,
+				B087FC5A1843761C00970C58 /* Isgl3dGLUILabel.m in Sources */,
+				B087FC5B1843761C00970C58 /* Isgl3dParticleSystem.m in Sources */,
+				B087FC5C1843761C00970C58 /* Isgl3dUShortArray.m in Sources */,
+				B087FC5D1843761C00970C58 /* btSerializer.cpp in Sources */,
+				B087FC5E1843761C00970C58 /* btOverlappingPairCache.cpp in Sources */,
+				B087FC5F1843761C00970C58 /* Isgl3dPrimitive.m in Sources */,
+				B087FC601843761C00970C58 /* PVRTVector.cpp in Sources */,
+				B087FC611843761C00970C58 /* btContactConstraint.cpp in Sources */,
+				B087FC621843761C00970C58 /* Isgl3dCylinder.m in Sources */,
+				B087FC631843761C00970C58 /* Isgl3dPhysicsWorld.mm in Sources */,
+				B087FC641843761C00970C58 /* Isgl3dCaptureShader.m in Sources */,
+				B087FC651843761C00970C58 /* btStridingMeshInterface.cpp in Sources */,
+				B087FC661843761C00970C58 /* btCapsuleShape.cpp in Sources */,
+				B087FC671843761C00970C58 /* Isgl3dActionScale.m in Sources */,
+				B087FC681843761C00970C58 /* PVRTFixedPoint.cpp in Sources */,
+				B087FC691843761C00970C58 /* Isgl3dGLTextureFactoryState1.m in Sources */,
+				B087FC6A1843761C00970C58 /* Isgl3dGLContext.m in Sources */,
+				B087FC6B1843761C00970C58 /* PVRTTexture.cpp in Sources */,
+				B087FC6C1843761C00970C58 /* Isgl3dActionRepeat.m in Sources */,
+				B087FC6D1843761C00970C58 /* Isgl3dUVMap.m in Sources */,
+				B087FC6E1843761C00970C58 /* Isgl3dEvent3D.m in Sources */,
+				B087FC6F1843761C00970C58 /* btCollisionObject.cpp in Sources */,
+				B087FC701843761C00970C58 /* PVRTTriStrip.cpp in Sources */,
+				B087FC711843761C00970C58 /* Isgl3dParticleShader.m in Sources */,
+				B087FC721843761C00970C58 /* Isgl3dParticleGenerator.m in Sources */,
+				B087FC731843761C00970C58 /* btConvexHullShape.cpp in Sources */,
+				B087FC741843761C00970C58 /* PVRTShader.cpp in Sources */,
+				B087FC751843761C00970C58 /* Isgl3dGLRenderer1.m in Sources */,
+				B087FC761843761C00970C58 /* btGjkEpa2.cpp in Sources */,
+				B087FC771843761C00970C58 /* Isgl3dVector.m in Sources */,
+				B087FC781843761C00970C58 /* Isgl3dActionDelay.m in Sources */,
+				B087FC791843761C00970C58 /* Isgl3dExplosionParticleGenerator.m in Sources */,
+				B087FC7A1843761C00970C58 /* btMultimaterialTriangleMeshShape.cpp in Sources */,
+				B087FC7B1843761C00970C58 /* gim_contact.cpp in Sources */,
+				B087FC7C1843761C00970C58 /* btOptimizedBvh.cpp in Sources */,
+				B087FC7D1843761C00970C58 /* Isgl3dGLContext2.m in Sources */,
+				B087FC7E1843761C00970C58 /* PVRTPFXParserAPI.cpp in Sources */,
+				B087FC7F1843761C00970C58 /* btBoxShape.cpp in Sources */,
+				B087FC801843761C00970C58 /* Isgl3dTouchedObject3D.m in Sources */,
+				B087FC811843761C00970C58 /* btHinge2Constraint.cpp in Sources */,
+				B087FC821843761C00970C58 /* Isgl3dMotionState.mm in Sources */,
+				B087FC831843761C00970C58 /* btTypedConstraint.cpp in Sources */,
+				B087FC841843761C00970C58 /* Isgl3dGLVBOFactory2.m in Sources */,
+				B087FC851843761C00970C58 /* Isgl3dView.m in Sources */,
+				B087FC871843761C00970C58 /* btMinkowskiPenetrationDepthSolver.cpp in Sources */,
+				B087FC881843761C00970C58 /* PVRTGeometry.cpp in Sources */,
+				B087FC891843761C00970C58 /* btSliderConstraint.cpp in Sources */,
+				B087FC8A1843761C00970C58 /* btTriangleBuffer.cpp in Sources */,
+				B087FC8B1843761C00970C58 /* btAxisSweep3.cpp in Sources */,
+				B087FC8C1843761C00970C58 /* Isgl3dGLTextureFactory.m in Sources */,
+				B087FC8D1843761C00970C58 /* btConvexPlaneCollisionAlgorithm.cpp in Sources */,
+				B087FC8E1843761C00970C58 /* btGeneric6DofSpringConstraint.cpp in Sources */,
+				B087FC8F1843761C00970C58 /* Isgl3dEvent3DDispatcher.m in Sources */,
+				B087FC901843761C00970C58 /* Isgl3dGLRenderer.m in Sources */,
+				B087FC911843761C00970C58 /* Isgl3dActionInstant.m in Sources */,
+				B087FC921843761C00970C58 /* btDbvt.cpp in Sources */,
+				B087FC931843761C00970C58 /* Isgl3dFountainBounceParticleGenerator.m in Sources */,
+				B087FC941843761C00970C58 /* Isgl3dCamera.m in Sources */,
+				B087FC951843761C00970C58 /* PVRTModelPOD.cpp in Sources */,
+				B087FC961843761C00970C58 /* btInternalEdgeUtility.cpp in Sources */,
+				B087FC971843761C00970C58 /* btScaledBvhTriangleMeshShape.cpp in Sources */,
+				B087FC981843761C00970C58 /* Isgl3dActionRotate.m in Sources */,
+				B087FC991843761C00970C58 /* btRaycastVehicle.cpp in Sources */,
+				B087FC9A1843761C00970C58 /* Isgl3dEAGLView.m in Sources */,
+				B087FC9B1843761C00970C58 /* btContinuousConvexCollision.cpp in Sources */,
+				B087FC9C1843761C00970C58 /* Isgl3dGLUIButton.m in Sources */,
+				B087FC9D1843761C00970C58 /* Isgl3dActionManager.m in Sources */,
+				B087FC9E1843761C00970C58 /* btConvexConcaveCollisionAlgorithm.cpp in Sources */,
+				B087FC9F1843761C00970C58 /* Isgl3dPODImporter.mm in Sources */,
+				B087FCA01843761C00970C58 /* btGImpactShape.cpp in Sources */,
+				B087FCA11843761C00970C58 /* Isgl3dTorus.m in Sources */,
+				B087FCA21843761C00970C58 /* Isgl3dGLVBOFactory.m in Sources */,
+				B087FCA31843761C00970C58 /* Isgl3dActionCallFunc.m in Sources */,
+				B087FCA41843761C00970C58 /* Isgl3dGLDepthRenderTexture1.m in Sources */,
+				B087FCA51843761C00970C58 /* btActivatingCollisionAlgorithm.cpp in Sources */,
+				B087FCA61843761C00970C58 /* Isgl3dLight.m in Sources */,
+				B087FCA71843761C00970C58 /* Isgl3dGLUIProgressBar.m in Sources */,
+				B087FCA81843761C00970C58 /* Isgl3dArrow.m in Sources */,
+				B087FCA91843761C00970C58 /* Isgl3dDemoCameraController.m in Sources */,
+				B087FCAA1843761C00970C58 /* Isgl3dActionParallel.m in Sources */,
+				B087FCAB1843761C00970C58 /* Isgl3dActionFixedDuration.m in Sources */,
+				B087FCAC1843761C00970C58 /* btSubSimplexConvexCast.cpp in Sources */,
+				B087FCAD1843761C00970C58 /* Isgl3dGLVBOData.m in Sources */,
+				B087FCAE1843761C00970C58 /* btUniversalConstraint.cpp in Sources */,
+				B087FCAF1843761C00970C58 /* btPolyhedralConvexShape.cpp in Sources */,
+				B087FCB01843761C00970C58 /* Isgl3dNode.m in Sources */,
+				B087FCB11843761C00970C58 /* PVRTString.cpp in Sources */,
+				B087FCB21843761C00970C58 /* Isgl3dAction.m in Sources */,
+				B087FCB31843761C00970C58 /* btRigidBody.cpp in Sources */,
+				B087FCB41843761C00970C58 /* btGImpactQuantizedBvh.cpp in Sources */,
+				B087FCB51843761C00970C58 /* btQuantizedBvh.cpp in Sources */,
+				B087FCB61843761C00970C58 /* btTriangleMeshShape.cpp in Sources */,
+				B087FCB71843761C00970C58 /* btRaycastCallback.cpp in Sources */,
+				B087FCB81843761C00970C58 /* btMinkowskiSumShape.cpp in Sources */,
+				B087FCB91843761C00970C58 /* btCollisionWorld.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0F735441840A0EE002F0C06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2739,7 +3415,6 @@
 				B0F73EB01840A4DD002F0C06 /* btTypedConstraint.cpp in Sources */,
 				B0F7361B1840A0EF002F0C06 /* Isgl3dGLVBOFactory2.m in Sources */,
 				B0F737151840A0F0002F0C06 /* Isgl3dView.m in Sources */,
-				B087FB991843395100970C58 /* WaterMeshDripping.mm in Sources */,
 				B0F73EA01840A4DD002F0C06 /* btMinkowskiPenetrationDepthSolver.cpp in Sources */,
 				B0F7373D1840A0F0002F0C06 /* PVRTGeometry.cpp in Sources */,
 				B0F73EAE1840A4DD002F0C06 /* btSliderConstraint.cpp in Sources */,
@@ -2801,7 +3476,7 @@
 				B087FB9A184339BC00970C58 /* WaterMeshDripping.mm in Sources */,
 				B087FB96184335D500970C58 /* WaterTerrain.m in Sources */,
 				B087FB95184335CB00970C58 /* MortalParticle.m in Sources */,
-				B0F740481843348C002F0C06 /* DripingDemo.mm in Sources */,
+				B0F740481843348C002F0C06 /* DrippingDemo.mm in Sources */,
 				B0F73F0818433060002F0C06 /* Isgl3dOvoid.m in Sources */,
 				B0F73F0918433060002F0C06 /* btSphereBoxCollisionAlgorithm.cpp in Sources */,
 				B0F73F0A18433060002F0C06 /* btAlignedAllocator.cpp in Sources */,
@@ -3082,6 +3757,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		B087FCD51843761C00970C58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ShallowWater/Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = ShallowWater/BreakingWaveDemo/BreakingWave.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = BreakingWave;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = ShallowWater/external/bullet/;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B087FCD61843761C00970C58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ShallowWater/Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = ShallowWater/BreakingWaveDemo/BreakingWave.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = BreakingWave;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = ShallowWater/external/bullet/;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		B0F737801840A0F0002F0C06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3190,6 +3901,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B087FCD41843761C00970C58 /* Build configuration list for PBXNativeTarget "BreakingWave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B087FCD51843761C00970C58 /* Debug */,
+				B087FCD61843761C00970C58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B0F735431840A0EE002F0C06 /* Build configuration list for PBXProject "ShallowWater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

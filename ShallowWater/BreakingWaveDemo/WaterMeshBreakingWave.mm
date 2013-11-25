@@ -1,12 +1,12 @@
 //
-//  WaterMeshDripping.mm
+//  WaterMeshBreakingWave.mm
 //  ShallowWater
 //
 //  Created by Steven Qiu on 13-11-24.
 //
 //
 
-#import "WaterMeshDripping.h"
+#import "WaterMeshBreakingWave.h"
 #import <GLKit/GLKit.h>
 
 
@@ -15,7 +15,7 @@ inline float getRandom(float min=0.0, float max=1.0)
     return min+( (rand()/(RAND_MAX+1.0)) *(max-min) );
 }
 
-@implementation WaterMeshDripping
+@implementation WaterMeshBreakingWave
 
 -(id) initWithGeometry:(float)width length:(float)length dx:(float)dx
 {
@@ -156,8 +156,12 @@ inline float getRandom(float min=0.0, float max=1.0)
         for (int j=0; j<_size; j++) {
             index = i * _size + j;
             _temp[index] = _vx[index] = _vy[index] = 0.0;
-            _preHeight[index] = _height[index] = 4.0;
-
+            if(i < _size / 4 && j < _size/4)
+                _preHeight[index] = _height[index] = 5.0;
+            else if(i > 3 *_size / 4 && j > 3 * _size/ 8 && j < 5 * _size/ 8)
+                _preHeight[index] = _height[index] = 5.0;
+            else
+                _preHeight[index] = _height[index] = 3.0;
         }
     }
     
@@ -180,7 +184,10 @@ inline float getRandom(float min=0.0, float max=1.0)
     [self updateHeight];
     [self updateVelocity];
     [self setBoundary];
-    [self addRandomDrop];
+    [self BreakWave];
+    [self MoveParticles];
+    [self RemoveParticles];
+    [self SetParticleBoundary];
     [self updateHeightAndNormal];
 }
 
@@ -342,8 +349,7 @@ inline float getRandom(float min=0.0, float max=1.0)
 {
     int px = getRandom() * (float)_size;
     int py = getRandom() * (float)_size;
-    [self genWaveByIndex:px y:py height:0.8 range:1 isRandom:YES];
-	
+    [self genWaveByIndex:px y:py height:0.5 range:1 isRandom:YES];
 }
 
 
@@ -366,7 +372,6 @@ inline float getRandom(float min=0.0, float max=1.0)
         }
     }
 }
-
 -(void) genWaveByCoordinate:(float)x z:(float)z height:(float)height range:(float)range
 {
     
@@ -530,7 +535,7 @@ inline float getRandom(float min=0.0, float max=1.0)
 {
     if (waterTerrain)
         _waterTerrain = [waterTerrain retain];
-        
+    
     if (_waterTerrain) {
         for (int i=0; i<_size; i++) {
             for (int j=0; j<_size; j++) {
@@ -539,10 +544,10 @@ inline float getRandom(float min=0.0, float max=1.0)
                 float z = (-0.5 * _size + i) * _dx;
                 float terrainHeight = [_waterTerrain getHeight:x z:z];
                 _terrain[index] = terrainHeight;
-                    
+                
                 if (_terrain[index] > _height[index]) {
                     _eta[index] = 0;
-                        // _eta[index] = _terrain[index];
+                    // _eta[index] = _terrain[index];
                     _height[index] = 0;
                 }
                 else
@@ -554,6 +559,156 @@ inline float getRandom(float min=0.0, float max=1.0)
     }
 }
 
+-(void) setParticleSystem:(Isgl3dParticleSystem *) parsys
+{
+    if(parsys)
+        _particleSystem = [parsys retain];
+}
 
+
+-(void) BreakWave
+{
+    float tH = 0.1;
+    float vminsplash = 1.0 ;
+    
+    int signx = 0;
+    int signz = 0;
+    int cnt = 0;
+    int cnt2 = 0;
+    int cnt3 = 0;
+    
+    for( int i = 1 ; i < _size - 1 ; i ++ )
+        for( int j = 1 ; j < _size - 1 ; j ++)
+        {
+            const int index = i * _size + j ;
+            float temp1 = MAX(fabs(_height[index + 1] - _height[index]), fabs(_height[index] - _height[index - 1])) * _dxInv;
+            float temp2 = MAX(fabs(_height[index + _size] - _height[index]), fabs(_height[index] - _height[index - _size])) * _dxInv;
+            float ttemp = sqrtf(temp1 * temp1 + temp2 * temp2);
+            Isgl3dVector3 pos = iv3Create(( (-0.5 * _size + j) * _dx), _height[index]+0.1, (-0.5 * _size + i) * _dx) ;
+            
+            
+            
+            if(ttemp > tH)
+            {
+                cnt++;
+                
+                float front = (_height[index] - _preHeight[index] )/ _dt;
+                
+                if(front > vminsplash )
+                {
+                    cnt2++;
+                    
+                    float d2h = (_height[index + 1] + _height[index - 1] +  _height[index + _size] + _height[index - _size] - 4 * _height[index]) / (_dx * _dx);
+                    if(d2h < 0)
+                    {
+                        cnt3++;
+                        GLKVector3 fluidVel = [self getVelocity3D:pos.x z:pos.z];
+                        
+                        if(fluidVel.x < 0)
+                            signx = -1;
+                        else
+                            signx = 1;
+                        
+                        if(fluidVel.z < 0)
+                            signz = -1;
+                        else
+                            signz = 1;
+                        
+                        Isgl3dVector3 parVel = iv3Create(fluidVel.x + signx * 1.5, 1.5, fluidVel.z + signz * 1.5);
+                        
+                        MortalParticle * particle = [[MortalParticle alloc] initWithPosition:pos Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:20.0 andVelocity:parVel];
+                        
+                        Isgl3dVector3 pos2 = iv3Create(pos.x + 0.1, pos.y, pos.z+0.1);
+                        MortalParticle * particle2 = [[MortalParticle alloc] initWithPosition:pos2 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:20.0 andVelocity:parVel];
+                        
+                        Isgl3dVector3 pos3 = iv3Create(pos.x -0.1, pos.y, pos.z -0.1);
+                        MortalParticle * particle3 = [[MortalParticle alloc] initWithPosition:pos3 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:20.0 andVelocity:parVel];
+                        
+                        Isgl3dVector3 pos4 = iv3Create(pos.x + 0.2, pos.y, pos.z );
+                        MortalParticle * particle4 = [[MortalParticle alloc] initWithPosition:pos4 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:20.0 andVelocity:parVel];
+                        
+                        Isgl3dVector3 pos5 = iv3Create(pos.x, pos.y, pos.z + 0.2);
+                        MortalParticle * particle5 = [[MortalParticle alloc] initWithPosition:pos5 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:20.0 andVelocity:parVel];
+                        
+                        [_particleSystem addMoralParticle:particle];
+                        [_particleSystem addMoralParticle:particle2];
+                        [_particleSystem addMoralParticle:particle3];
+//                        [_particleSystem addMoralParticle:particle4];
+//                        [_particleSystem addMoralParticle:particle5];
+                        
+                    }
+                }
+            }
+            
+        }
+    //    NSLog(@"%d points passed condition 1 :", cnt);
+    //    NSLog(@"%d points passed condition 2 :", cnt2);
+    //    NSLog(@"%d points passed condition 3 :", cnt3);
+    //    NSLog(@"%d Particles generated :", [_particleSystem numberOfPoints]);
+    
+    
+}
+
+-(void) MoveParticles
+{
+    float dt = 0.05;
+    NSArray *particles = [_particleSystem particles];
+    for( int i = 0 ; i < particles.count ; i ++)
+    {
+        MortalParticle *particle = [particles objectAtIndex:i];
+        particle.x += particle.velx * dt;
+        particle.z += particle.velz * dt;
+        particle.y += particle.vely * dt;
+        
+        particle.vely += -10 * dt;
+        
+        float waterHeight = [self getHeight:particle.x z:particle.z];
+        if(particle.y < waterHeight)
+            particle.y = waterHeight;
+        particle.lifetime -= 2;
+    }
+}
+
+-(void) RemoveParticles
+{
+    NSArray *particles = [_particleSystem particles];
+    for( int i = 0 ; i < particles.count ; i ++)
+    {
+        MortalParticle *particle = [particles objectAtIndex:i];
+        float waterHeight = [self getHeight:particle.x z:particle.z];
+        if(particle.y <= waterHeight + 0.1)
+        {
+            float prop = rand() / (RAND_MAX + 0.1);
+            if(particle.lifetime <= 0 && prop < 0.6)
+                [_particleSystem removeParticle:particle];
+            else
+            {
+                particle.velx *= 0.3;
+                particle.velz *= 0.3;
+            }
+        }
+        
+    }
+}
+
+
+
+-(void) SetParticleBoundary
+{
+    NSArray * parsys = [_particleSystem particles];
+    for( int i = 0 ; i < parsys.count ; i ++ )
+    {
+        MortalParticle *particle = [ parsys objectAtIndex:i];
+        if(particle.x < -12 )
+            particle.x = -12;
+        else if(particle.x > 12)
+            particle.x = 12;
+        
+        if(particle.z < -12)
+            particle.z = -12;
+        else if(particle.z > 12)
+            particle.z = 12;
+    }
+}
 
 @end
