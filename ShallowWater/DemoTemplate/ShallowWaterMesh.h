@@ -55,8 +55,6 @@
     
     Isgl3dUVMap * _uvMap;
     
-    Isgl3dScene3D *_worldScene;
-    
     Isgl3dParticleSystem  *_particleSystem;
     
     int count ;
@@ -101,8 +99,6 @@
 -(GLKVector3) getVelocity3D:(float) x z:(float) z;
 
 -(void) setWaterTerrain:(WaterTerrain *)waterTerrain;
-
--(void) setScenec:(Isgl3dScene3D *) scene;
 
 -(void) setParticleSystem:(Isgl3dParticleSystem *) parsys;
 

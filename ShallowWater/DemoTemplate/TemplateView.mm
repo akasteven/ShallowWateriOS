@@ -1,5 +1,5 @@
 //
-//  HelloWorldView.m
+//  TemplateView.mm
 //  ShallowWater
 //
 //  Created by Steven Qiu on 13-11-23.
@@ -13,19 +13,12 @@
 - (id) init {
 	
 	if ((self = [super init])) {
-        
-        [self setupCamera];
-        
+    
         [Isgl3dDirector sharedInstance].shadowRenderingMethod = Isgl3dShadowPlanar;
         [Isgl3dDirector sharedInstance].shadowAlpha = 0.1;
         
-        Isgl3dShadowCastingLight *light1  = [[Isgl3dShadowCastingLight alloc] initWithHexColor:@"333333" diffuseColor:@"FFFFFF" specularColor:@"FFFFFF" attenuation:0.001];
-        light1.position = iv3(8, 8, 8);
-        light1.isVisible = YES;
-		[self.scene addChild:light1];
-        
-        
-        
+        [self setupCamera];
+        [self setupScene];
         
 		[self schedule:@selector(tick:)];
 	}
@@ -40,6 +33,25 @@
     _cameraController.phi = 30;
     _cameraController.doubleTapEnabled = NO;
 }
+
+
+-(void) setupScene{
+    
+    Isgl3dShadowCastingLight *light1  = [[Isgl3dShadowCastingLight alloc] initWithHexColor:@"333333" diffuseColor:@"FFFFFF" specularColor:@"FFFFFF" attenuation:0.001];
+    light1.position = iv3(8, 8, 8);
+    light1.isVisible = YES;
+    [self.scene addChild:light1];
+    
+    _container = [[self.scene createNode] retain];
+    
+    _water = [ShallowWaterMesh initWithGeometry:100 dx:0.25];
+    [_water startAnimation];
+    Isgl3dTextureMaterial * material = [Isgl3dTextureMaterial materialWithTextureFile:@"water05.png" shininess:0.9];
+    _tsunami = [_container createNodeWithMesh:_water andMaterial:material];
+    _tsunami.alpha = 1.0;
+    _tsunami.doubleSided = YES;
+}
+
 
 - (void) dealloc {
 

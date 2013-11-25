@@ -1,8 +1,8 @@
 //
 //  MortalParticle.m
-//  ProjectDemo
+//  ShallowWater
 //
-//  Created by StevenQiu on 13-11-18.
+//  Created by Steven Qiu on 13-11-18.
 //  Copyright (c) 2013年 vrlab@buaa. All rights reserved.
 //
 

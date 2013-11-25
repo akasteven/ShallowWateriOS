@@ -562,12 +562,6 @@ inline float getRandom(float min=0.0, float max=1.0)
     
 }
 
--(void) setScenec:(Isgl3dScene3D *) scene
-{
-    if (scene) {
-        _worldScene = [scene retain];
-    }
-}
 
 -(void) setWaterTerrain:(WaterTerrain *)waterTerrain
 {
