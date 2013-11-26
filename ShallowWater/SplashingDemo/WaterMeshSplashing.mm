@@ -573,8 +573,8 @@ inline float getRandom(float min=0.0, float max=1.0)
     int cnt2 = 0;
     int cnt3 = 0;
     
-    for( int i = 1 ; i < _size - 1 ; i ++ )
-        for( int j = 1 ; j < _size - 1 ; j ++)
+    for( int i = 1 ; i < _size - 2 ; i += 2 )
+        for( int j = 1 ; j < _size - 2 ; j +=2)
         {
             const int index = i * _size + j ;
             float temp1 = MAX(fabs(_height[index + 1] - _height[index]), fabs(_height[index] - _height[index - 1])) * _dxInv;
@@ -610,37 +610,26 @@ inline float getRandom(float min=0.0, float max=1.0)
                         
                         Isgl3dVector3 parVel = iv3Create(fluidVel.x + signx * 1.5, 1.5, fluidVel.z + signz * 1.5);
                         
-                        MortalParticle * particle = [[MortalParticle alloc] initWithPosition:pos Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:20.0 andVelocity:parVel];
+                        MortalParticle * particle = [[MortalParticle alloc] initWithPosition:pos Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:100.0 andVelocity:parVel];
                         
-                        Isgl3dVector3 pos2 = iv3Create(pos.x + 0.1, pos.y, pos.z+0.1);
-                        MortalParticle * particle2 = [[MortalParticle alloc] initWithPosition:pos2 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:20.0 andVelocity:parVel];
+                        Isgl3dVector3 pos2 = iv3Create(pos.x + 0.2, pos.y, pos.z + 0.2);
+                        MortalParticle * particle2 = [[MortalParticle alloc] initWithPosition:pos2 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:100.0 andVelocity:parVel];
                         
-                        Isgl3dVector3 pos3 = iv3Create(pos.x -0.1, pos.y, pos.z -0.1);
-                        MortalParticle * particle3 = [[MortalParticle alloc] initWithPosition:pos3 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:20.0 andVelocity:parVel];
+                        Isgl3dVector3 pos3 = iv3Create(pos.x - 0.2, pos.y, pos.z);
+                        MortalParticle * particle3 = [[MortalParticle alloc] initWithPosition:pos3 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:100.0 andVelocity:parVel];
                         
-                        Isgl3dVector3 pos4 = iv3Create(pos.x + 0.2, pos.y, pos.z );
+                        Isgl3dVector3 pos4 = iv3Create(pos.x , pos.y, pos.z + 0.2);
                         MortalParticle * particle4 = [[MortalParticle alloc] initWithPosition:pos4 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:20.0 andVelocity:parVel];
-                        
-                        Isgl3dVector3 pos5 = iv3Create(pos.x, pos.y, pos.z + 0.2);
-                        MortalParticle * particle5 = [[MortalParticle alloc] initWithPosition:pos5 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:20.0 andVelocity:parVel];
                         
                         [_particleSystem addMoralParticle:particle];
                         [_particleSystem addMoralParticle:particle2];
-//                        [_particleSystem addMoralParticle:particle3];
-//                        [_particleSystem addMoralParticle:particle4];
-//                        [_particleSystem addMoralParticle:particle5];
-                        
+                        [_particleSystem addMoralParticle:particle3];
+                        [_particleSystem addMoralParticle:particle4];
                     }
                 }
             }
             
         }
-    //    NSLog(@"%d points passed condition 1 :", cnt);
-    //    NSLog(@"%d points passed condition 2 :", cnt2);
-    //    NSLog(@"%d points passed condition 3 :", cnt3);
-    //    NSLog(@"%d Particles generated :", [_particleSystem numberOfPoints]);
-    
-    
 }
 
 -(void) MoveParticles
@@ -673,12 +662,12 @@ inline float getRandom(float min=0.0, float max=1.0)
         if(particle.y <= waterHeight + 0.1)
         {
             float prop = rand() / (RAND_MAX + 0.1);
-            if(particle.lifetime <= 0 && prop < 0.6)
+            if(particle.lifetime <= 0 && prop < 0.8)
                 [_particleSystem removeParticle:particle];
             else
             {
-                particle.velx *= 0.3;
-                particle.velz *= 0.3;
+                particle.velx *= 0.05;
+                particle.velz *= 0.05;
             }
         }
         

@@ -635,6 +635,20 @@
 		B0E3FD341844988300C73219 /* WaterMeshSplashing.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0E3FD301844980200C73219 /* WaterMeshSplashing.mm */; };
 		B0E3FD361844A1EB00C73219 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD351844A1EB00C73219 /* box.png */; };
 		B0E3FD371844A1F800C73219 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD351844A1EB00C73219 /* box.png */; };
+		B0E3FD391844BB1200C73219 /* wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD381844BB1200C73219 /* wood.jpg */; };
+		B0E3FD3A1844BF2E00C73219 /* wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD381844BB1200C73219 /* wood.jpg */; };
+		B0E3FD3C1844C45800C73219 /* red_checker.png in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD3B1844C45800C73219 /* red_checker.png */; };
+		B0E3FD3D1844C46100C73219 /* red_checker.png in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD3B1844C45800C73219 /* red_checker.png */; };
+		B0E3FD401844CAF600C73219 /* wood2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD3E1844CAF600C73219 /* wood2.jpg */; };
+		B0E3FD411844CAF600C73219 /* wood3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD3F1844CAF600C73219 /* wood3.jpg */; };
+		B0E3FD421844CBDE00C73219 /* wood2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD3E1844CAF600C73219 /* wood2.jpg */; };
+		B0E3FD431844CBDE00C73219 /* wood3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD3F1844CAF600C73219 /* wood3.jpg */; };
+		B0E3FD451844CF4000C73219 /* wood4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD441844CF4000C73219 /* wood4.jpg */; };
+		B0E3FD461844CF5100C73219 /* wood4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD441844CF4000C73219 /* wood4.jpg */; };
+		B0E3FD481844D7C700C73219 /* stone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD471844D7C700C73219 /* stone.jpg */; };
+		B0E3FD491844D7DA00C73219 /* stone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD471844D7C700C73219 /* stone.jpg */; };
+		B0E3FD4A1844D8D400C73219 /* stone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD471844D7C700C73219 /* stone.jpg */; };
+		B0E3FD4B1844D9CC00C73219 /* red_checker.png in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FD3B1844C45800C73219 /* red_checker.png */; };
 		B0F7354C1840A0EE002F0C06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354B1840A0EE002F0C06 /* QuartzCore.framework */; };
 		B0F7354E1840A0EE002F0C06 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354D1840A0EE002F0C06 /* OpenGLES.framework */; };
 		B0F735501840A0EE002F0C06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354F1840A0EE002F0C06 /* CoreGraphics.framework */; };
@@ -1257,6 +1271,12 @@
 		B0E3FD2F1844980200C73219 /* WaterMeshSplashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaterMeshSplashing.h; path = ShallowWater/SplashingDemo/WaterMeshSplashing.h; sourceTree = "<group>"; };
 		B0E3FD301844980200C73219 /* WaterMeshSplashing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = WaterMeshSplashing.mm; path = ShallowWater/SplashingDemo/WaterMeshSplashing.mm; sourceTree = "<group>"; };
 		B0E3FD351844A1EB00C73219 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = box.png; path = Resources/box.png; sourceTree = "<group>"; };
+		B0E3FD381844BB1200C73219 /* wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wood.jpg; path = Resources/wood.jpg; sourceTree = "<group>"; };
+		B0E3FD3B1844C45800C73219 /* red_checker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red_checker.png; path = Resources/red_checker.png; sourceTree = "<group>"; };
+		B0E3FD3E1844CAF600C73219 /* wood2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wood2.jpg; path = Resources/wood2.jpg; sourceTree = "<group>"; };
+		B0E3FD3F1844CAF600C73219 /* wood3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wood3.jpg; path = Resources/wood3.jpg; sourceTree = "<group>"; };
+		B0E3FD441844CF4000C73219 /* wood4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wood4.jpg; path = Resources/wood4.jpg; sourceTree = "<group>"; };
+		B0E3FD471844D7C700C73219 /* stone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stone.jpg; path = Resources/stone.jpg; sourceTree = "<group>"; };
 		B0F735481840A0EE002F0C06 /* ShallowWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShallowWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F7354B1840A0EE002F0C06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B0F7354D1840A0EE002F0C06 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -2049,6 +2069,12 @@
 		B0F735561840A0EE002F0C06 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B0E3FD471844D7C700C73219 /* stone.jpg */,
+				B0E3FD441844CF4000C73219 /* wood4.jpg */,
+				B0E3FD3E1844CAF600C73219 /* wood2.jpg */,
+				B0E3FD3F1844CAF600C73219 /* wood3.jpg */,
+				B0E3FD3B1844C45800C73219 /* red_checker.png */,
+				B0E3FD381844BB1200C73219 /* wood.jpg */,
 				B0E3FD351844A1EB00C73219 /* box.png */,
 				B0E3FBE91844897700C73219 /* water0.jpg */,
 				B04926A2184396C30091843D /* particle.png */,
@@ -3192,6 +3218,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0E3FD4B1844D9CC00C73219 /* red_checker.png in Resources */,
+				B0E3FD4A1844D8D400C73219 /* stone.jpg in Resources */,
 				B0E3FBEE18448A7600C73219 /* water1.jpg in Resources */,
 				B0E3FBEB184489D200C73219 /* water0.jpg in Resources */,
 				B04926A4184396D60091843D /* particle.png in Resources */,
@@ -3221,6 +3249,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0E3FD491844D7DA00C73219 /* stone.jpg in Resources */,
+				B0E3FD461844CF5100C73219 /* wood4.jpg in Resources */,
+				B0E3FD421844CBDE00C73219 /* wood2.jpg in Resources */,
+				B0E3FD431844CBDE00C73219 /* wood3.jpg in Resources */,
+				B0E3FD3D1844C46100C73219 /* red_checker.png in Resources */,
+				B0E3FD3A1844BF2E00C73219 /* wood.jpg in Resources */,
 				B0E3FD371844A1F800C73219 /* box.png in Resources */,
 				B0E3FD0F1844958700C73219 /* water1.jpg in Resources */,
 				B0E3FD101844958700C73219 /* water0.jpg in Resources */,
@@ -3253,8 +3287,13 @@
 			files = (
 				B0F735721840A0EE002F0C06 /* LICENSE.IMGTEC in Resources */,
 				B0F735671840A0EE002F0C06 /* shadowMap.vsh in Resources */,
+				B0E3FD3C1844C45800C73219 /* red_checker.png in Resources */,
+				B0E3FD391844BB1200C73219 /* wood.jpg in Resources */,
 				B0E3FD2C184497A200C73219 /* Splashing.plist in Resources */,
+				B0E3FD411844CAF600C73219 /* wood3.jpg in Resources */,
 				B0E3FBEA1844897700C73219 /* water0.jpg in Resources */,
+				B0E3FD481844D7C700C73219 /* stone.jpg in Resources */,
+				B0E3FD451844CF4000C73219 /* wood4.jpg in Resources */,
 				B087FB9E1843496400970C58 /* wall0.jpg in Resources */,
 				B0F73ED01840A87E002F0C06 /* wall2.png in Resources */,
 				B0F7356A1840A0EE002F0C06 /* Default.png in Resources */,
@@ -3272,6 +3311,7 @@
 				B0F735631840A0EE002F0C06 /* particle.vsh in Resources */,
 				B0D17141184391A300D9B075 /* particle.jpg in Resources */,
 				B087FB9C1843491600970C58 /* wall.jpg in Resources */,
+				B0E3FD401844CAF600C73219 /* wood2.jpg in Resources */,
 				B0F735651840A0EE002F0C06 /* shadowMap.fsh in Resources */,
 				B0E3FD361844A1EB00C73219 /* box.png in Resources */,
 				B0F7355D1840A0EE002F0C06 /* generic.fsh in Resources */,

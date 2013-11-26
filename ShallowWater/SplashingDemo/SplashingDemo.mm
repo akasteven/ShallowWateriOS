@@ -41,8 +41,8 @@
     
     _cameraController = [[Isgl3dDemoCameraController alloc] initWithCamera:self.camera andView:self];
     _cameraController.orbit = 50;
-    _cameraController.theta = 100;
-    _cameraController.phi = 30;
+    _cameraController.theta = 90;
+    _cameraController.phi = 45;
     _cameraController.doubleTapEnabled = NO;
 }
 
@@ -63,6 +63,33 @@
     _tsunami.alpha = 1.0;
     _tsunami.doubleSided = YES;
     
+    Isgl3dTextureMaterial * materialPool = [Isgl3dTextureMaterial materialWithTextureFile:@"wall.jpg" shininess:0.9];
+    
+    Isgl3dCube * left = [Isgl3dCube meshWithGeometry:25 height:4 depth:10 nx:2 ny:2];
+    Isgl3dMeshNode * leftNode = [ _container createNodeWithMesh:left andMaterial:materialPool];
+    Isgl3dVector3 leftPositon = iv3Create(0.0, 3, -17.5);
+    [leftNode setPosition:leftPositon];
+    
+    Isgl3dCube * right = [Isgl3dCube meshWithGeometry:25 height:4 depth:10 nx:2 ny:2];
+    Isgl3dMeshNode * rightNode = [ _container createNodeWithMesh:right andMaterial:materialPool];
+    Isgl3dVector3 rightPositon = iv3Create(0.0, 3, 17.5);
+    [rightNode setPosition:rightPositon];
+    
+    Isgl3dCube * front = [Isgl3dCube meshWithGeometry:10 height:4 depth:45 nx:2 ny:2];
+    Isgl3dMeshNode * frontNode = [ _container createNodeWithMesh:front andMaterial:materialPool];
+    Isgl3dVector3 frontPositon = iv3Create(17.5, 3, 0.0);
+    [frontNode setPosition:frontPositon];
+    
+    Isgl3dCube * back = [Isgl3dCube meshWithGeometry:10 height:4 depth:45 nx:2 ny:2];
+    Isgl3dMeshNode * backNode = [ _container createNodeWithMesh:back andMaterial:materialPool];
+    Isgl3dVector3 backPositon = iv3Create(-17.5, 3, 0.0);
+    [backNode setPosition:backPositon];
+    
+    Isgl3dCube * bottom = [Isgl3dCube meshWithGeometry:25.5 height:1 depth:25.5 nx:2 ny:2];
+    Isgl3dMeshNode * bottomNode = [ _container createNodeWithMesh:bottom andMaterial:materialPool];
+    Isgl3dVector3 bottomPositon = iv3Create(0, 1.5, 0);
+    [bottomNode setPosition:bottomPositon];
+    
 }
 
 -(void) setupParticle{
@@ -79,45 +106,10 @@
 
 -(void) setupPhysicalObjects{
     _physicsObjects = [[NSMutableArray alloc] init];
-    Isgl3dTextureMaterial * materialBox = [Isgl3dTextureMaterial materialWithTextureFile:@"box.png" shininess:0.9];
-    int nBoxNum = 20;
-    Isgl3dCube **box;
-    Isgl3dMeshNode **boxNode;
-    box = (Isgl3dCube **)malloc(sizeof(Isgl3dCube*) * nBoxNum);
-    boxNode = (Isgl3dMeshNode **)malloc(sizeof(Isgl3dNode *) * nBoxNum);
-    for (int i=0; i<nBoxNum; i++) {
-        box[i] = [Isgl3dCube meshWithGeometry:1 height:1 depth:1 nx:1 ny:1];
-        boxNode[i] = [_container createNodeWithMesh:box[i] andMaterial:materialBox];
-    }
     
-    boxNode[0].x = 3;    boxNode[0].y = 5;    boxNode[0].z = 0;
-    boxNode[1].x = 7;    boxNode[1].y = 8;    boxNode[1].z = 7;
-    boxNode[2].x = 5;    boxNode[2].y = 9;    boxNode[2].z = 4;
-    boxNode[3].x = 2;    boxNode[3].y = 7;    boxNode[3].z = 6;
-    
-    boxNode[4].x = 2;    boxNode[4].y = 5;    boxNode[4].z = -5;
-    boxNode[5].x = 6;    boxNode[5].y = 8;    boxNode[5].z = -6;
-    boxNode[6].x = 4;    boxNode[6].y = 7;    boxNode[6].z = -5;
-    boxNode[7].x = 8;    boxNode[7].y = 9;    boxNode[7].z = -3;
-    
-    boxNode[8].x = -1;   boxNode[8].y = 5;    boxNode[8].z = 4;
-    boxNode[9].x = -6;   boxNode[9].y = 8;    boxNode[9].z = 6;
-    boxNode[10].x = -4;  boxNode[10].y = 7.5; boxNode[10].z = 9;
-    boxNode[11].x = -9;  boxNode[11].y = 8;   boxNode[11].z = 2;
-    
-    boxNode[12].x = -2;  boxNode[12].y = 7;   boxNode[12].z = -4;
-    boxNode[13].x = -4;  boxNode[13].y = 8;   boxNode[13].z = -6;
-    boxNode[14].x = -8;  boxNode[14].y = 7.5; boxNode[14].z = -9;
-    boxNode[15].x = -10; boxNode[15].y = 9;   boxNode[15].z = -2;
-    
-    boxNode[16].x = -1;  boxNode[16].y = 7;   boxNode[16].z = -1;
-    boxNode[17].x = -1;  boxNode[17].y = 10;   boxNode[17].z = -0;
-    boxNode[18].x = -2;  boxNode[18].y = 7.5; boxNode[18].z = 1;
-    boxNode[19].x =  0;  boxNode[19].y = 8;   boxNode[19].z = 0;
-    
-    _collisionConfig = new btDefaultCollisionConfiguration();                       // 碰撞配置
-    _collisionDispatcher = new btCollisionDispatcher(_collisionConfig);       // 碰撞分配
-    _broadphase = new btDbvtBroadphase();                                                    // AABB包围盒
+    _collisionConfig = new btDefaultCollisionConfiguration();
+    _collisionDispatcher = new btCollisionDispatcher(_collisionConfig);
+    _broadphase = new btDbvtBroadphase();
     _constraintSolver = new btSequentialImpulseConstraintSolver();
     _discreteDynamicsWorld = new btDiscreteDynamicsWorld(_collisionDispatcher, _broadphase, _constraintSolver, _collisionConfig);
     _discreteDynamicsWorld->setGravity(btVector3(0,-10,0));
@@ -127,7 +119,44 @@
     [self.scene addChild:_physicsWorld];
     
     btVector3 vel0 = btVector3(0, 0, 0);
-    btVector3 vel1 = btVector3(5, 0, -5);
+
+    
+    Isgl3dTextureMaterial * material = [Isgl3dTextureMaterial materialWithTextureFile:@"wood4.jpg" shininess:0.9];
+    Isgl3dCylinder * cylinderMesh = [Isgl3dCylinder meshWithGeometry:4 radius:1 ns:32 nt:32 openEnded:NO];
+    Isgl3dMeshNode * woodNode = [_container createNodeWithMesh:cylinderMesh andMaterial:material];
+    Isgl3dMeshNode * woodNode2 = [_container createNodeWithMesh:cylinderMesh andMaterial:material];
+    
+    woodNode.rotationX = 90.0;
+    woodNode.x = 0.0;
+    woodNode.y = 10.0;
+    woodNode.z = 0.0;
+    
+    woodNode2.rotationX = 90.0;
+    woodNode2.rotationZ = 90.0;
+    woodNode2.x = 3.0;
+    woodNode2.y = 8.0;
+    woodNode2.z = 5.0;
+    
+    btCollisionShape * woodShape =  new btCylinderShape(btVector3(3.0,1.0,1.0));
+    [self createPhysicsObject:woodNode shape:woodShape mass:2 restitution:0.1  linVel:vel0];
+    [self createPhysicsObject:woodNode2 shape:woodShape mass:2 restitution:0.1  linVel:vel0];
+    
+    
+    Isgl3dTextureMaterial * materialBox = [Isgl3dTextureMaterial materialWithTextureFile:@"box.png" shininess:0.9];
+    int nBoxNum = 3;
+    Isgl3dCube **box;
+    Isgl3dMeshNode **boxNode;
+    box = (Isgl3dCube **)malloc(sizeof(Isgl3dCube*) * nBoxNum);
+    boxNode = (Isgl3dMeshNode **)malloc(sizeof(Isgl3dNode *) * nBoxNum);
+    for (int i = 0; i < nBoxNum; i ++) {
+        box[i] = [Isgl3dCube meshWithGeometry:1 height:1 depth:1 nx:1 ny:1];
+        boxNode[i] = [_container createNodeWithMesh:box[i] andMaterial:materialBox];
+    }
+
+    boxNode[0].x = 3;    boxNode[0].y = 5;    boxNode[0].z = 0;
+    boxNode[1].x = -7;    boxNode[1].y = 8;    boxNode[1].z = -7;
+    boxNode[2].x = 5;    boxNode[2].y = 9;    boxNode[2].z = 4;
+    
     btCollisionShape ** boxShape;
     boxShape = (btCollisionShape **)malloc(sizeof(btCollisionShape *) * nBoxNum);
     for (int i=0; i<nBoxNum; i++)
@@ -152,20 +181,20 @@
     for(int i = 0 ; i < _physicsObjects.count ; i ++ ){
         Isgl3dPhysicsObject3D *physicsObject = [_physicsObjects objectAtIndex:i];
         Isgl3dNode * node =  physicsObject.node;
-        
+        int shapeType = physicsObject.rigidBody->getCollisionShape()->getShapeType();
         
         float waterHeight = [_water getHeight:node.x z:node.z];
-        float boxBottom = node.y - 0.5;
+        float boxBottom = node.y - 1.0;
         float boxInWater = waterHeight - boxBottom;
         
         
         if(boxInWater > 0.0)
         {
             btVector3 buoyance;
-            if(boxInWater > 1.0f)
+            if(boxInWater > 2.0f)
                 buoyance = btVector3(0.0, 40, 0.0f);
             else
-                buoyance = btVector3(0.0, 4*10*boxInWater, 0.0);
+                buoyance = btVector3(0.0, 20*boxInWater, 0.0);
             physicsObject.rigidBody->applyForce(buoyance, btVector3(0, 0, 0));
             
             btVector3 dragForce;
@@ -182,17 +211,20 @@
             float volumn = objectVelocity.length() * dt * 1;
             float dh = volumn / (0.25 * 0.25);
             float Cdisp = 0.05;
-            [_water genWaveByCoordinate:node.x z:node.z height:dh * Cdisp range:1];
+            if(shapeType == 13){
+                
+                [_water genWaveByCoordinate:node.x z:node.z+1 height:dh * Cdisp range:2];
+                [_water genWaveByCoordinate:node.x z:node.z-1 height:dh * Cdisp range:2];
+                [_water genWaveByCoordinate:node.x z:node.z height:dh * Cdisp range:1];
+            }
+            
+            else{
+                [_water genWaveByCoordinate:node.x z:node.z height:dh * Cdisp range:2];
+            }
             physicsObject.rigidBody->setAngularVelocity(physicsObject.rigidBody->getAngularVelocity() * 0.3) ;
-            
-            //for single box cruise only
-            //            [_water genWave:node.x + 0.75 z:node.z - 0.75 height:dh * Cdisp range:1];
-            //            physicsObject.rigidBody->applyForce(btVector3(10,0,-10), btVector3(0, 0, 0));
-            
 
         }
         
-        // 限制物体不超过边界，一般情况下用rigidBody控制node
         if (physicsObject.node.x > 12) {
             btVector3 bv(12,0,0);
             physicsObject.rigidBody->translate(bv);
@@ -208,8 +240,6 @@
             physicsObject.rigidBody->translate(bv);
         }
     }
-    
-    
     
     NSLog(@"%d Particles generated :", [myparticleSystem numberOfPoints]);
 
@@ -249,10 +279,6 @@
 
 
 @end
-
-
-
-
 
 
 
