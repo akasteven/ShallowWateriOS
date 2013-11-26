@@ -586,8 +586,6 @@ inline float getRandom(float min=0.0, float max=1.0)
             float ttemp = sqrtf(temp1 * temp1 + temp2 * temp2);
             Isgl3dVector3 pos = iv3Create(( (-0.5 * _size + j) * _dx), _height[index]+0.1, (-0.5 * _size + i) * _dx) ;
             
-            
-            
             if(ttemp > tH)
             {
                 cnt++;
@@ -599,7 +597,7 @@ inline float getRandom(float min=0.0, float max=1.0)
                     cnt2++;
                     
                     float d2h = (_height[index + 1] + _height[index - 1] +  _height[index + _size] + _height[index - _size] - 4 * _height[index]) / (_dx * _dx);
-                    if(d2h < 0)
+                    if(d2h < -1)
                     {
                         cnt3++;
                         GLKVector3 fluidVel = [self getVelocity3D:pos.x z:pos.z];

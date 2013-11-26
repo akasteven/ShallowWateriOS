@@ -320,6 +320,10 @@
 		B0B661BB184378CE001E7373 /* WaterMeshBreakingWave.mm in Sources */ = {isa = PBXBuildFile; fileRef = B087FCDE184377CA00970C58 /* WaterMeshBreakingWave.mm */; };
 		B0D17141184391A300D9B075 /* particle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0D17140184391A300D9B075 /* particle.jpg */; };
 		B0D17142184393E000D9B075 /* particle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0D17140184391A300D9B075 /* particle.jpg */; };
+		B0E3FBEA1844897700C73219 /* water0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FBE91844897700C73219 /* water0.jpg */; };
+		B0E3FBEB184489D200C73219 /* water0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FBE91844897700C73219 /* water0.jpg */; };
+		B0E3FBED18448A6600C73219 /* water1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FBEC18448A6600C73219 /* water1.jpg */; };
+		B0E3FBEE18448A7600C73219 /* water1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0E3FBEC18448A6600C73219 /* water1.jpg */; };
 		B0F7354C1840A0EE002F0C06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354B1840A0EE002F0C06 /* QuartzCore.framework */; };
 		B0F7354E1840A0EE002F0C06 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354D1840A0EE002F0C06 /* OpenGLES.framework */; };
 		B0F735501840A0EE002F0C06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F7354F1840A0EE002F0C06 /* CoreGraphics.framework */; };
@@ -933,6 +937,8 @@
 		B087FCDD184377CA00970C58 /* WaterMeshBreakingWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaterMeshBreakingWave.h; path = ShallowWater/BreakingWaveDemo/WaterMeshBreakingWave.h; sourceTree = "<group>"; };
 		B087FCDE184377CA00970C58 /* WaterMeshBreakingWave.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = WaterMeshBreakingWave.mm; path = ShallowWater/BreakingWaveDemo/WaterMeshBreakingWave.mm; sourceTree = "<group>"; };
 		B0D17140184391A300D9B075 /* particle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = particle.jpg; path = Resources/particle.jpg; sourceTree = "<group>"; };
+		B0E3FBE91844897700C73219 /* water0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = water0.jpg; path = Resources/water0.jpg; sourceTree = "<group>"; };
+		B0E3FBEC18448A6600C73219 /* water1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = water1.jpg; path = Resources/water1.jpg; sourceTree = "<group>"; };
 		B0F735481840A0EE002F0C06 /* ShallowWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShallowWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F7354B1840A0EE002F0C06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B0F7354D1840A0EE002F0C06 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1698,8 +1704,10 @@
 		B0F735561840A0EE002F0C06 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B0E3FBE91844897700C73219 /* water0.jpg */,
 				B04926A2184396C30091843D /* particle.png */,
 				B0D17140184391A300D9B075 /* particle.jpg */,
+				B0E3FBEC18448A6600C73219 /* water1.jpg */,
 				B087FB9D1843496400970C58 /* wall0.jpg */,
 				B087FB9B1843491600970C58 /* wall.jpg */,
 				B0F73ECE1840A87E002F0C06 /* wall2.png */,
@@ -2820,6 +2828,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0E3FBEE18448A7600C73219 /* water1.jpg in Resources */,
+				B0E3FBEB184489D200C73219 /* water0.jpg in Resources */,
 				B04926A4184396D60091843D /* particle.png in Resources */,
 				B0D17142184393E000D9B075 /* particle.jpg in Resources */,
 				B087FCC21843761C00970C58 /* LICENSE.IMGTEC in Resources */,
@@ -2849,6 +2859,7 @@
 			files = (
 				B0F735721840A0EE002F0C06 /* LICENSE.IMGTEC in Resources */,
 				B0F735671840A0EE002F0C06 /* shadowMap.vsh in Resources */,
+				B0E3FBEA1844897700C73219 /* water0.jpg in Resources */,
 				B087FB9E1843496400970C58 /* wall0.jpg in Resources */,
 				B0F73ED01840A87E002F0C06 /* wall2.png in Resources */,
 				B0F7356A1840A0EE002F0C06 /* Default.png in Resources */,
@@ -2858,6 +2869,7 @@
 				B0F73ED11840A87E002F0C06 /* water05.png in Resources */,
 				B0F735591840A0EE002F0C06 /* capture.fsh in Resources */,
 				B0F73EC91840A540002F0C06 /* README in Resources */,
+				B0E3FBED18448A6600C73219 /* water1.jpg in Resources */,
 				B04926A3184396C30091843D /* particle.png in Resources */,
 				B0F735701840A0EE002F0C06 /* LICENSE.isgl3d in Resources */,
 				B0F7356E1840A0EE002F0C06 /* Icon@2x.png in Resources */,

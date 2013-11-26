@@ -47,7 +47,7 @@
     
     _water = [WaterMeshBreakingWave initWithGeometry:100 dx:0.25];
     [_water startAnimation];
-    Isgl3dTextureMaterial * material = [Isgl3dTextureMaterial materialWithTextureFile:@"water05.png" shininess:0.9];
+    Isgl3dTextureMaterial * material = [Isgl3dTextureMaterial materialWithTextureFile:@"water1.jpg" shininess:0.9];
     _tsunami = [_container createNodeWithMesh:_water andMaterial:material];
     _tsunami.alpha = 1.0;
     _tsunami.doubleSided = YES;
