@@ -610,16 +610,16 @@ inline float getRandom(float min=0.0, float max=1.0)
                         
                         Isgl3dVector3 parVel = iv3Create(fluidVel.x + signx * 1.5, 1.5, fluidVel.z + signz * 1.5);
                         
-                        MortalParticle * particle = [[MortalParticle alloc] initWithPosition:pos Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:100.0 andVelocity:parVel];
+                        MortalParticle * particle = [[MortalParticle alloc] initWithPosition:pos Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:80.0 andVelocity:parVel];
                         
                         Isgl3dVector3 pos2 = iv3Create(pos.x + 0.2, pos.y, pos.z + 0.2);
-                        MortalParticle * particle2 = [[MortalParticle alloc] initWithPosition:pos2 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:100.0 andVelocity:parVel];
+                        MortalParticle * particle2 = [[MortalParticle alloc] initWithPosition:pos2 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:80.0 andVelocity:parVel];
                         
                         Isgl3dVector3 pos3 = iv3Create(pos.x - 0.2, pos.y, pos.z);
-                        MortalParticle * particle3 = [[MortalParticle alloc] initWithPosition:pos3 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:100.0 andVelocity:parVel];
+                        MortalParticle * particle3 = [[MortalParticle alloc] initWithPosition:pos3 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:80.0 andVelocity:parVel];
                         
                         Isgl3dVector3 pos4 = iv3Create(pos.x , pos.y, pos.z + 0.2);
-                        MortalParticle * particle4 = [[MortalParticle alloc] initWithPosition:pos4 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:20.0 andVelocity:parVel];
+                        MortalParticle * particle4 = [[MortalParticle alloc] initWithPosition:pos4 Color:iv3Create(1.0, 1.0, 1.0) Size:10.0 Lifetime:80.0 andVelocity:parVel];
                         
                         [_particleSystem addMoralParticle:particle];
                         [_particleSystem addMoralParticle:particle2];

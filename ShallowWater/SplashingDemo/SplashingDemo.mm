@@ -31,7 +31,7 @@
         [self setupParticle];
         [self setupPhysicalObjects];
         
-        
+
 		[self schedule:@selector(tick:)];
 	}
 	return self;
@@ -40,9 +40,9 @@
 -(void) setupCamera{
     
     _cameraController = [[Isgl3dDemoCameraController alloc] initWithCamera:self.camera andView:self];
-    _cameraController.orbit = 50;
+    _cameraController.orbit = 60;
     _cameraController.theta = 90;
-    _cameraController.phi = 45;
+    _cameraController.phi = 40;
     _cameraController.doubleTapEnabled = NO;
 }
 
@@ -60,7 +60,7 @@
     [_water startAnimation];
     Isgl3dTextureMaterial * material = [Isgl3dTextureMaterial materialWithTextureFile:@"water05.png" shininess:0.9];
     _tsunami = [_container createNodeWithMesh:_water andMaterial:material];
-    _tsunami.alpha = 1.0;
+    _tsunami.alpha = 0.9;
     _tsunami.doubleSided = YES;
     
     Isgl3dTextureMaterial * materialPool = [Isgl3dTextureMaterial materialWithTextureFile:@"wall.jpg" shininess:0.9];
