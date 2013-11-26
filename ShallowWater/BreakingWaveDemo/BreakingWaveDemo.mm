@@ -29,8 +29,8 @@
 -(void) setupCamera{
     
     _cameraController = [[Isgl3dDemoCameraController alloc] initWithCamera:self.camera andView:self];
-    _cameraController.orbit = 40;
-    _cameraController.theta = 120;
+    _cameraController.orbit = 70;
+    _cameraController.theta = 100;
     _cameraController.phi = 30;
     _cameraController.doubleTapEnabled = NO;
 }
@@ -45,7 +45,7 @@
     
     _container = [[self.scene createNode] retain];
     
-    _water = [WaterMeshBreakingWave initWithGeometry:100 dx:0.25];
+    _water = [WaterMeshBreakingWave initWithGeometry:120 dx:0.25];
     [_water startAnimation];
     Isgl3dTextureMaterial * material = [Isgl3dTextureMaterial materialWithTextureFile:@"water1.jpg" shininess:0.9];
     _tsunami = [_container createNodeWithMesh:_water andMaterial:material];

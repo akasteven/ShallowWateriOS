@@ -19,10 +19,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Splashing.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>B087FBA11843761C00970C58</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B0E3FBEF1844958700C73219</key>
 		<dict>
 			<key>primary</key>
 			<true/>

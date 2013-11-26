@@ -1,13 +1,14 @@
 //
-//  WaterMeshBreakingWave.mm
+//  WaterMeshSplashing.mm
 //  ShallowWater
 //
 //  Created by Steven Qiu on 13-11-24.
 //
 //
 
-#import "WaterMeshBreakingWave.h"
+#import "WaterMeshSplashing.h"
 #import <GLKit/GLKit.h>
+
 
 
 inline float getRandom(float min=0.0, float max=1.0)
@@ -15,7 +16,7 @@ inline float getRandom(float min=0.0, float max=1.0)
     return min+( (rand()/(RAND_MAX+1.0)) *(max-min) );
 }
 
-@implementation WaterMeshBreakingWave
+@implementation WaterMeshSplashing
 
 -(id) initWithGeometry:(float)width length:(float)length dx:(float)dx
 {
@@ -156,12 +157,7 @@ inline float getRandom(float min=0.0, float max=1.0)
         for (int j=0; j<_size; j++) {
             index = i * _size + j;
             _temp[index] = _vx[index] = _vy[index] = 0.0;
-            if(i < _size / 4 && j < _size/4)
-                _preHeight[index] = _height[index] = 5.0;
-            else if(i > 3 *_size / 4 && j > 3 * _size/ 8 && j < 5 * _size/ 8)
-                _preHeight[index] = _height[index] = 5.0;
-            else
-                _preHeight[index] = _height[index] = 3.0;
+            _preHeight[index] = _height[index] = 3.0;
         }
     }
     
@@ -630,7 +626,7 @@ inline float getRandom(float min=0.0, float max=1.0)
                         
                         [_particleSystem addMoralParticle:particle];
                         [_particleSystem addMoralParticle:particle2];
-                        [_particleSystem addMoralParticle:particle3];
+//                        [_particleSystem addMoralParticle:particle3];
 //                        [_particleSystem addMoralParticle:particle4];
 //                        [_particleSystem addMoralParticle:particle5];
                         
@@ -696,15 +692,15 @@ inline float getRandom(float min=0.0, float max=1.0)
     for( int i = 0 ; i < parsys.count ; i ++ )
     {
         MortalParticle *particle = [ parsys objectAtIndex:i];
-        if(particle.x < -14.5 )
-            particle.x = -14.5;
-        else if(particle.x > 14.5)
-            particle.x = 14.5;
+        if(particle.x < -12 )
+            particle.x = -12;
+        else if(particle.x > 12)
+            particle.x = 12;
         
-        if(particle.z < -14.5)
-            particle.z = -14.5;
-        else if(particle.z > 14.5)
-            particle.z = 14.5;
+        if(particle.z < -12)
+            particle.z = -12;
+        else if(particle.z > 12)
+            particle.z = 12;
     }
 }
 
